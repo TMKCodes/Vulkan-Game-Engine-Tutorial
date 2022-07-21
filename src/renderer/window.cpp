@@ -20,9 +20,20 @@ namespace tml {
             window = glfwCreateWindow(glfwGetVideoMode(glfwGetPrimaryMonitor())->width,
                                             glfwGetVideoMode(glfwGetPrimaryMonitor())->height, "Too Much Lost Engine",
                                             glfwGetPrimaryMonitor(), nullptr);
+            glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_HIDDEN);
+            glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+            if(glfwRawMouseMotionSupported()) {
+                glfwSetInputMode(window, GLFW_RAW_MOUSE_MOTION, GLFW_FALSE);
+            }
         } else {
             window = glfwCreateWindow(width, height, windowName.c_str(), nullptr, nullptr);
+            glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_HIDDEN);
+            glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+            if(glfwRawMouseMotionSupported()) {
+                glfwSetInputMode(window, GLFW_RAW_MOUSE_MOTION, GLFW_FALSE);
+            }
         }
+        
         glfwSetWindowUserPointer(window, this);
         glfwSetFramebufferSizeCallback(window, framebufferResizeCallback);
     }

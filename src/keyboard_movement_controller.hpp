@@ -21,6 +21,8 @@ namespace tml {
             void moveInPlaneXZ(GLFWwindow* window, float dt, TmlDrawable& gameObject);
             KeyMappings keys{};
             float moveSpeed{3.f};
-            float lookSpeed{1.5f};
+            float lookSpeed{5.f};
+            double lastMXpos = 0.0;
+            double lastMYpos = 0.0;
     };
 }  // namespace tml
