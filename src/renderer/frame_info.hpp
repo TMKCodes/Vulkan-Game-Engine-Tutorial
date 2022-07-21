@@ -1,9 +1,8 @@
 #pragma once
 
 #include "camera.hpp"
-#include "game_object.hpp"
+#include "drawable.hpp"
 
-// lib
 #include <vulkan/vulkan.h>
 
 namespace tml {
@@ -30,6 +29,6 @@ struct FrameInfo {
   VkCommandBuffer commandBuffer;
   TmlCamera &camera;
   VkDescriptorSet globalDescriptorSet;
-  TmlGameObject::Map &gameObjects;
+  TmlDrawable::Map &gameObjects;
 };
 }  // namespace tml
