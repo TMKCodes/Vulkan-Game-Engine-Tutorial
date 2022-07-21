@@ -1,9 +1,9 @@
-CMakeFiles/LveEngine.dir/src/lve_swap_chain.cpp.o: \
- /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/lve_swap_chain.cpp \
+CMakeFiles/TmlEngine.dir/src/tml_swap_chain.cpp.o: \
+ /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/tml_swap_chain.cpp \
  /usr/include/stdc-predef.h \
- /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/lve_swap_chain.hpp \
- /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/lve_device.hpp \
- /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/lve_window.hpp \
+ /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/tml_swap_chain.hpp \
+ /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/tml_device.hpp \
+ /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/tml_window.hpp \
  /usr/include/GLFW/glfw3.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include/stddef.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include/stdint.h \

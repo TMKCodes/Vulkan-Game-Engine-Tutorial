@@ -1,10 +1,10 @@
-CMakeFiles/LveEngine.dir/src/first_app.cpp.o: \
+CMakeFiles/TmlEngine.dir/src/first_app.cpp.o: \
  /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/first_app.cpp \
  /usr/include/stdc-predef.h \
  /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/first_app.hpp \
- /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/lve_descriptors.hpp \
- /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/lve_device.hpp \
- /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/lve_window.hpp \
+ /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/tml_descriptors.hpp \
+ /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/tml_device.hpp \
+ /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/tml_window.hpp \
  /usr/include/GLFW/glfw3.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include/stddef.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include/stdint.h \
@@ -151,9 +151,9 @@ CMakeFiles/LveEngine.dir/src/first_app.cpp.o: \
  /usr/include/c++/12.1.0/bits/node_handle.h \
  /usr/include/c++/12.1.0/bits/unordered_map.h \
  /usr/include/c++/12.1.0/bits/erase_if.h \
- /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/lve_game_object.hpp \
- /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/lve_model.hpp \
- /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/lve_buffer.hpp \
+ /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/tml_game_object.hpp \
+ /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/tml_model.hpp \
+ /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/tml_buffer.hpp \
  /usr/include/glm/glm.hpp /usr/include/glm/detail/_fixes.hpp \
  /usr/include/c++/12.1.0/cmath /usr/include/math.h \
  /usr/include/bits/math-vector.h /usr/include/bits/libm-simd-decl-stubs.h \
@@ -307,13 +307,13 @@ CMakeFiles/LveEngine.dir/src/first_app.cpp.o: \
  /usr/include/glm/ext/matrix_transform.hpp \
  /usr/include/glm/ext/matrix_transform.inl \
  /usr/include/glm/gtc/matrix_transform.inl \
- /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/lve_renderer.hpp \
- /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/lve_swap_chain.hpp \
+ /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/tml_renderer.hpp \
+ /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/tml_swap_chain.hpp \
  /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/keyboard_movement_controller.hpp \
- /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/lve_camera.hpp \
+ /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/tml_camera.hpp \
  /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/systems/point_light_system.hpp \
- /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/systems/../lve_frame_info.hpp \
- /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/systems/../lve_pipeline.hpp \
+ /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/systems/../tml_frame_info.hpp \
+ /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/systems/../tml_pipeline.hpp \
  /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/systems/simple_render_system.hpp \
  /usr/include/c++/12.1.0/array /usr/include/c++/12.1.0/compare \
  /usr/include/c++/12.1.0/chrono /usr/include/c++/12.1.0/bits/chrono.h \

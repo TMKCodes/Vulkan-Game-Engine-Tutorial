@@ -1,74 +1,74 @@
 #pragma once
 
-#include "lve_device.hpp"
+#include "tml_device.hpp"
 
 // std
 #include <memory>
 #include <unordered_map>
 #include <vector>
 
-namespace lve {
+namespace tml {
 
-class LveDescriptorSetLayout {
+class TmlDescriptorSetLayout {
  public:
   class Builder {
    public:
-    Builder(LveDevice &lveDevice) : lveDevice{lveDevice} {}
+    Builder(TmlDevice &tmlDevice) : tmlDevice{tmlDevice} {}
 
     Builder &addBinding(
         uint32_t binding,
         VkDescriptorType descriptorType,
         VkShaderStageFlags stageFlags,
         uint32_t count = 1);
-    std::unique_ptr<LveDescriptorSetLayout> build() const;
+    std::unique_ptr<TmlDescriptorSetLayout> build() const;
 
    private:
-    LveDevice &lveDevice;
+    TmlDevice &tmlDevice;
     std::unordered_map<uint32_t, VkDescriptorSetLayoutBinding> bindings{};
   };
 
-  LveDescriptorSetLayout(
-      LveDevice &lveDevice, std::unordered_map<uint32_t, VkDescriptorSetLayoutBinding> bindings);
-  ~LveDescriptorSetLayout();
-  LveDescriptorSetLayout(const LveDescriptorSetLayout &) = delete;
-  LveDescriptorSetLayout &operator=(const LveDescriptorSetLayout &) = delete;
+  TmlDescriptorSetLayout(
+      TmlDevice &tmlDevice, std::unordered_map<uint32_t, VkDescriptorSetLayoutBinding> bindings);
+  ~TmlDescriptorSetLayout();
+  TmlDescriptorSetLayout(const TmlDescriptorSetLayout &) = delete;
+  TmlDescriptorSetLayout &operator=(const TmlDescriptorSetLayout &) = delete;
 
   VkDescriptorSetLayout getDescriptorSetLayout() const { return descriptorSetLayout; }
 
  private:
-  LveDevice &lveDevice;
+  TmlDevice &tmlDevice;
   VkDescriptorSetLayout descriptorSetLayout;
   std::unordered_map<uint32_t, VkDescriptorSetLayoutBinding> bindings;
 
-  friend class LveDescriptorWriter;
+  friend class TmlDescriptorWriter;
 };
 
-class LveDescriptorPool {
+class TmlDescriptorPool {
  public:
   class Builder {
    public:
-    Builder(LveDevice &lveDevice) : lveDevice{lveDevice} {}
+    Builder(TmlDevice &tmlDevice) : tmlDevice{tmlDevice} {}
 
     Builder &addPoolSize(VkDescriptorType descriptorType, uint32_t count);
     Builder &setPoolFlags(VkDescriptorPoolCreateFlags flags);
     Builder &setMaxSets(uint32_t count);
-    std::unique_ptr<LveDescriptorPool> build() const;
+    std::unique_ptr<TmlDescriptorPool> build() const;
 
    private:
-    LveDevice &lveDevice;
+    TmlDevice &tmlDevice;
     std::vector<VkDescriptorPoolSize> poolSizes{};
     uint32_t maxSets = 1000;
     VkDescriptorPoolCreateFlags poolFlags = 0;
   };
 
-  LveDescriptorPool(
-      LveDevice &lveDevice,
+  TmlDescriptorPool(
+      TmlDevice &tmlDevice,
       uint32_t maxSets,
       VkDescriptorPoolCreateFlags poolFlags,
       const std::vector<VkDescriptorPoolSize> &poolSizes);
-  ~LveDescriptorPool();
-  LveDescriptorPool(const LveDescriptorPool &) = delete;
-  LveDescriptorPool &operator=(const LveDescriptorPool &) = delete;
+  ~TmlDescriptorPool();
+  TmlDescriptorPool(const TmlDescriptorPool &) = delete;
+  TmlDescriptorPool &operator=(const TmlDescriptorPool &) = delete;
 
   bool allocateDescriptor(
       const VkDescriptorSetLayout descriptorSetLayout, VkDescriptorSet &descriptor) const;
@@ -78,26 +78,26 @@ class LveDescriptorPool {
   void resetPool();
 
  private:
-  LveDevice &lveDevice;
+  TmlDevice &tmlDevice;
   VkDescriptorPool descriptorPool;
 
-  friend class LveDescriptorWriter;
+  friend class TmlDescriptorWriter;
 };
 
-class LveDescriptorWriter {
+class TmlDescriptorWriter {
  public:
-  LveDescriptorWriter(LveDescriptorSetLayout &setLayout, LveDescriptorPool &pool);
+  TmlDescriptorWriter(TmlDescriptorSetLayout &setLayout, TmlDescriptorPool &pool);
 
-  LveDescriptorWriter &writeBuffer(uint32_t binding, VkDescriptorBufferInfo *bufferInfo);
-  LveDescriptorWriter &writeImage(uint32_t binding, VkDescriptorImageInfo *imageInfo);
+  TmlDescriptorWriter &writeBuffer(uint32_t binding, VkDescriptorBufferInfo *bufferInfo);
+  TmlDescriptorWriter &writeImage(uint32_t binding, VkDescriptorImageInfo *imageInfo);
 
   bool build(VkDescriptorSet &set);
   void overwrite(VkDescriptorSet &set);
 
  private:
-  LveDescriptorSetLayout &setLayout;
-  LveDescriptorPool &pool;
+  TmlDescriptorSetLayout &setLayout;
+  TmlDescriptorPool &pool;
   std::vector<VkWriteDescriptorSet> writes;
 };
 
-}  // namespace lve
+}  // namespace tml

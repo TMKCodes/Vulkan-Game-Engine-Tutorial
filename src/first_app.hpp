@@ -1,16 +1,16 @@
 #pragma once
 
-#include "lve_descriptors.hpp"
-#include "lve_device.hpp"
-#include "lve_game_object.hpp"
-#include "lve_renderer.hpp"
-#include "lve_window.hpp"
+#include "tml_descriptors.hpp"
+#include "tml_device.hpp"
+#include "tml_game_object.hpp"
+#include "tml_renderer.hpp"
+#include "tml_window.hpp"
 
 // std
 #include <memory>
 #include <vector>
 
-namespace lve {
+namespace tml {
 class FirstApp {
  public:
   static constexpr int WIDTH = 800;
@@ -27,12 +27,12 @@ class FirstApp {
  private:
   void loadGameObjects();
 
-  LveWindow lveWindow{WIDTH, HEIGHT, "Vulkan Tutorial"};
-  LveDevice lveDevice{lveWindow};
-  LveRenderer lveRenderer{lveWindow, lveDevice};
+  TmlWindow tmlWindow{WIDTH, HEIGHT, "Vulkan Tutorial"};
+  TmlDevice tmlDevice{tmlWindow};
+  TmlRenderer tmlRenderer{tmlWindow, tmlDevice};
 
   // note: order of declarations matters
-  std::unique_ptr<LveDescriptorPool> globalPool{};
-  LveGameObject::Map gameObjects;
+  std::unique_ptr<TmlDescriptorPool> globalPool{};
+  TmlGameObject::Map gameObjects;
 };
-}  // namespace lve
+}  // namespace tml

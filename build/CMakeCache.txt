@@ -145,7 +145,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=LveEngine
+CMAKE_PROJECT_NAME:STATIC=TmlEngine
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=0.23.0
@@ -228,13 +228,13 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 GLSL_VALIDATOR:FILEPATH=/usr/bin/glslangValidator
 
 //Value Computed by CMake
-LveEngine_BINARY_DIR:STATIC=/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/build
+TmlEngine_BINARY_DIR:STATIC=/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/build
 
 //Value Computed by CMake
-LveEngine_IS_TOP_LEVEL:STATIC=ON
+TmlEngine_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-LveEngine_SOURCE_DIR:STATIC=/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine
+TmlEngine_SOURCE_DIR:STATIC=/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine
 
 //Path to a program.
 Vulkan_GLSLANG_VALIDATOR_EXECUTABLE:FILEPATH=/bin/glslangValidator

@@ -1,8 +1,8 @@
 #include "first_app.hpp"
 
 #include "keyboard_movement_controller.hpp"
-#include "lve_buffer.hpp"
-#include "lve_camera.hpp"
+#include "tml_buffer.hpp"
+#include "tml_camera.hpp"
 #include "systems/point_light_system.hpp"
 #include "systems/simple_render_system.hpp"
 
@@ -18,13 +18,13 @@
 #include <chrono>
 #include <stdexcept>
 
-namespace lve {
+namespace tml {
 
 FirstApp::FirstApp() {
   globalPool =
-      LveDescriptorPool::Builder(lveDevice)
-          .setMaxSets(LveSwapChain::MAX_FRAMES_IN_FLIGHT)
-          .addPoolSize(VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER, LveSwapChain::MAX_FRAMES_IN_FLIGHT)
+      TmlDescriptorPool::Builder(tmlDevice)
+          .setMaxSets(TmlSwapChain::MAX_FRAMES_IN_FLIGHT)
+          .addPoolSize(VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER, TmlSwapChain::MAX_FRAMES_IN_FLIGHT)
           .build();
   loadGameObjects();
 }
@@ -32,10 +32,10 @@ FirstApp::FirstApp() {
 FirstApp::~FirstApp() {}
 
 void FirstApp::run() {
-  std::vector<std::unique_ptr<LveBuffer>> uboBuffers(LveSwapChain::MAX_FRAMES_IN_FLIGHT);
+  std::vector<std::unique_ptr<TmlBuffer>> uboBuffers(TmlSwapChain::MAX_FRAMES_IN_FLIGHT);
   for (int i = 0; i < uboBuffers.size(); i++) {
-    uboBuffers[i] = std::make_unique<LveBuffer>(
-        lveDevice,
+    uboBuffers[i] = std::make_unique<TmlBuffer>(
+        tmlDevice,
         sizeof(GlobalUbo),
         1,
         VK_BUFFER_USAGE_UNIFORM_BUFFER_BIT,
@@ -44,34 +44,34 @@ void FirstApp::run() {
   }
 
   auto globalSetLayout =
-      LveDescriptorSetLayout::Builder(lveDevice)
+      TmlDescriptorSetLayout::Builder(tmlDevice)
           .addBinding(0, VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER, VK_SHADER_STAGE_ALL_GRAPHICS)
           .build();
 
-  std::vector<VkDescriptorSet> globalDescriptorSets(LveSwapChain::MAX_FRAMES_IN_FLIGHT);
+  std::vector<VkDescriptorSet> globalDescriptorSets(TmlSwapChain::MAX_FRAMES_IN_FLIGHT);
   for (int i = 0; i < globalDescriptorSets.size(); i++) {
     auto bufferInfo = uboBuffers[i]->descriptorInfo();
-    LveDescriptorWriter(*globalSetLayout, *globalPool)
+    TmlDescriptorWriter(*globalSetLayout, *globalPool)
         .writeBuffer(0, &bufferInfo)
         .build(globalDescriptorSets[i]);
   }
 
   SimpleRenderSystem simpleRenderSystem{
-      lveDevice,
-      lveRenderer.getSwapChainRenderPass(),
+      tmlDevice,
+      tmlRenderer.getSwapChainRenderPass(),
       globalSetLayout->getDescriptorSetLayout()};
   PointLightSystem pointLightSystem{
-      lveDevice,
-      lveRenderer.getSwapChainRenderPass(),
+      tmlDevice,
+      tmlRenderer.getSwapChainRenderPass(),
       globalSetLayout->getDescriptorSetLayout()};
-  LveCamera camera{};
+  TmlCamera camera{};
 
-  auto viewerObject = LveGameObject::createGameObject();
+  auto viewerObject = TmlGameObject::createGameObject();
   viewerObject.transform.translation.z = -2.5f;
   KeyboardMovementController cameraController{};
 
   auto currentTime = std::chrono::high_resolution_clock::now();
-  while (!lveWindow.shouldClose()) {
+  while (!tmlWindow.shouldClose()) {
     glfwPollEvents();
 
     auto newTime = std::chrono::high_resolution_clock::now();
@@ -79,14 +79,14 @@ void FirstApp::run() {
         std::chrono::duration<float, std::chrono::seconds::period>(newTime - currentTime).count();
     currentTime = newTime;
 
-    cameraController.moveInPlaneXZ(lveWindow.getGLFWwindow(), frameTime, viewerObject);
+    cameraController.moveInPlaneXZ(tmlWindow.getGLFWwindow(), frameTime, viewerObject);
     camera.setViewYXZ(viewerObject.transform.translation, viewerObject.transform.rotation);
 
-    float aspect = lveRenderer.getAspectRatio();
+    float aspect = tmlRenderer.getAspectRatio();
     camera.setPerspectiveProjection(glm::radians(50.f), aspect, 0.1f, 100.f);
 
-    if (auto commandBuffer = lveRenderer.beginFrame()) {
-      int frameIndex = lveRenderer.getFrameIndex();
+    if (auto commandBuffer = tmlRenderer.beginFrame()) {
+      int frameIndex = tmlRenderer.getFrameIndex();
       FrameInfo frameInfo{
           frameIndex,
           frameTime,
@@ -105,39 +105,39 @@ void FirstApp::run() {
       uboBuffers[frameIndex]->flush();
 
       // render
-      lveRenderer.beginSwapChainRenderPass(commandBuffer);
+      tmlRenderer.beginSwapChainRenderPass(commandBuffer);
 
       // order here matters
       simpleRenderSystem.renderGameObjects(frameInfo);
       pointLightSystem.render(frameInfo);
 
-      lveRenderer.endSwapChainRenderPass(commandBuffer);
-      lveRenderer.endFrame();
+      tmlRenderer.endSwapChainRenderPass(commandBuffer);
+      tmlRenderer.endFrame();
     }
   }
 
-  vkDeviceWaitIdle(lveDevice.device());
+  vkDeviceWaitIdle(tmlDevice.device());
 }
 
 void FirstApp::loadGameObjects() {
-  std::shared_ptr<LveModel> lveModel =
-      LveModel::createModelFromFile(lveDevice, "models/flat_vase.obj");
-  auto flatVase = LveGameObject::createGameObject();
-  flatVase.model = lveModel;
+  std::shared_ptr<TmlModel> tmlModel =
+      TmlModel::createModelFromFile(tmlDevice, "models/flat_vase.obj");
+  auto flatVase = TmlGameObject::createGameObject();
+  flatVase.model = tmlModel;
   flatVase.transform.translation = {-.5f, .5f, 0.f};
   flatVase.transform.scale = {3.f, 1.5f, 3.f};
   gameObjects.emplace(flatVase.getId(), std::move(flatVase));
 
-  lveModel = LveModel::createModelFromFile(lveDevice, "models/smooth_vase.obj");
-  auto smoothVase = LveGameObject::createGameObject();
-  smoothVase.model = lveModel;
+  tmlModel = TmlModel::createModelFromFile(tmlDevice, "models/smooth_vase.obj");
+  auto smoothVase = TmlGameObject::createGameObject();
+  smoothVase.model = tmlModel;
   smoothVase.transform.translation = {.5f, .5f, 0.f};
   smoothVase.transform.scale = {3.f, 1.5f, 3.f};
   gameObjects.emplace(smoothVase.getId(), std::move(smoothVase));
 
-  lveModel = LveModel::createModelFromFile(lveDevice, "models/quad.obj");
-  auto floor = LveGameObject::createGameObject();
-  floor.model = lveModel;
+  tmlModel = TmlModel::createModelFromFile(tmlDevice, "models/quad.obj");
+  auto floor = TmlGameObject::createGameObject();
+  floor.model = tmlModel;
   floor.transform.translation = {0.f, .5f, 0.f};
   floor.transform.scale = {3.f, 1.f, 3.f};
   gameObjects.emplace(floor.getId(), std::move(floor));
@@ -152,7 +152,7 @@ void FirstApp::loadGameObjects() {
   };
 
   for (int i = 0; i < lightColors.size(); i++) {
-    auto pointLight = LveGameObject::makePointLight(0.2f);
+    auto pointLight = TmlGameObject::makePointLight(0.2f);
     pointLight.color = lightColors[i];
     auto rotateLight = glm::rotate(
         glm::mat4(1.f),
@@ -163,4 +163,4 @@ void FirstApp::loadGameObjects() {
   }
 }
 
-}  // namespace lve
+}  // namespace tml

@@ -1,25 +1,25 @@
 #pragma once
 
-#include "lve_device.hpp"
-#include "lve_swap_chain.hpp"
-#include "lve_window.hpp"
+#include "tml_device.hpp"
+#include "tml_swap_chain.hpp"
+#include "tml_window.hpp"
 
 // std
 #include <cassert>
 #include <memory>
 #include <vector>
 
-namespace lve {
-class LveRenderer {
+namespace tml {
+class TmlRenderer {
  public:
-  LveRenderer(LveWindow &window, LveDevice &device);
-  ~LveRenderer();
+  TmlRenderer(TmlWindow &window, TmlDevice &device);
+  ~TmlRenderer();
 
-  LveRenderer(const LveRenderer &) = delete;
-  LveRenderer &operator=(const LveRenderer &) = delete;
+  TmlRenderer(const TmlRenderer &) = delete;
+  TmlRenderer &operator=(const TmlRenderer &) = delete;
 
-  VkRenderPass getSwapChainRenderPass() const { return lveSwapChain->getRenderPass(); }
-  float getAspectRatio() const { return lveSwapChain->extentAspectRatio(); }
+  VkRenderPass getSwapChainRenderPass() const { return tmlSwapChain->getRenderPass(); }
+  float getAspectRatio() const { return tmlSwapChain->extentAspectRatio(); }
   bool isFrameInProgress() const { return isFrameStarted; }
 
   VkCommandBuffer getCurrentCommandBuffer() const {
@@ -42,13 +42,13 @@ class LveRenderer {
   void freeCommandBuffers();
   void recreateSwapChain();
 
-  LveWindow &lveWindow;
-  LveDevice &lveDevice;
-  std::unique_ptr<LveSwapChain> lveSwapChain;
+  TmlWindow &tmlWindow;
+  TmlDevice &tmlDevice;
+  std::unique_ptr<TmlSwapChain> tmlSwapChain;
   std::vector<VkCommandBuffer> commandBuffers;
 
   uint32_t currentImageIndex;
   int currentFrameIndex{0};
   bool isFrameStarted{false};
 };
-}  // namespace lve
+}  // namespace tml

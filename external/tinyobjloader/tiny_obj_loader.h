@@ -187,7 +187,7 @@ struct material_t {
   real_t emission[3];
   real_t shininess;
   real_t ior;       // index of refraction
-  real_t dissolve;  // 1 == opaque; 0 == fully transparent
+  real_t dissotml;  // 1 == opaque; 0 == fully transparent
   // illumination model (see http://www.fileformat.info/format/material/)
   int illum;
 
@@ -1332,7 +1332,7 @@ static void InitMaterial(material_t *material) {
     material->emission[i] = static_cast<real_t>(0.0);
   }
   material->illum = 0;
-  material->dissolve = static_cast<real_t>(1.0);
+  material->dissotml = static_cast<real_t>(1.0);
   material->shininess = static_cast<real_t>(1.0);
   material->ior = static_cast<real_t>(1.0);
 
@@ -1977,15 +1977,15 @@ void LoadMtl(std::map<std::string, int> *material_map,
       continue;
     }
 
-    // dissolve
+    // dissotml
     if ((token[0] == 'd' && IS_SPACE(token[1]))) {
       token += 1;
-      material.dissolve = parseReal(&token);
+      material.dissotml = parseReal(&token);
 
       if (has_tr) {
         warn_ss << "Both `d` and `Tr` parameters defined for \""
                 << material.name
-                << "\". Use the value of `d` for dissolve (line " << line_no
+                << "\". Use the value of `d` for dissotml (line " << line_no
                 << " in .mtl.)\n";
       }
       has_d = true;
@@ -1997,13 +1997,13 @@ void LoadMtl(std::map<std::string, int> *material_map,
         // `d` wins. Ignore `Tr` value.
         warn_ss << "Both `d` and `Tr` parameters defined for \""
                 << material.name
-                << "\". Use the value of `d` for dissolve (line " << line_no
+                << "\". Use the value of `d` for dissotml (line " << line_no
                 << " in .mtl.)\n";
       } else {
         // We invert value of Tr(assume Tr is in range [0, 1])
         // NOTE: Interpretation of Tr is application(exporter) dependent. For
         // some application(e.g. 3ds max obj exporter), Tr = d(Issue 43)
-        material.dissolve = static_cast<real_t>(1.0) - parseReal(&token);
+        material.dissotml = static_cast<real_t>(1.0) - parseReal(&token);
       }
       has_tr = true;
       continue;

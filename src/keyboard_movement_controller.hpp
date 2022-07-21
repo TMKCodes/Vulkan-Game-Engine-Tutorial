@@ -1,9 +1,9 @@
 #pragma once
 
-#include "lve_game_object.hpp"
-#include "lve_window.hpp"
+#include "tml_game_object.hpp"
+#include "tml_window.hpp"
 
-namespace lve {
+namespace tml {
 class KeyboardMovementController {
  public:
   struct KeyMappings {
@@ -19,10 +19,10 @@ class KeyboardMovementController {
     int lookDown = GLFW_KEY_DOWN;
   };
 
-  void moveInPlaneXZ(GLFWwindow* window, float dt, LveGameObject& gameObject);
+  void moveInPlaneXZ(GLFWwindow* window, float dt, TmlGameObject& gameObject);
 
   KeyMappings keys{};
   float moveSpeed{3.f};
   float lookSpeed{1.5f};
 };
-}  // namespace lve
+}  // namespace tml

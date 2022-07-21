@@ -1,20 +1,20 @@
-#include "lve_window.hpp"
+#include "tml_window.hpp"
 
 // std
 #include <stdexcept>
 
-namespace lve {
+namespace tml {
 
-LveWindow::LveWindow(int w, int h, std::string name) : width{w}, height{h}, windowName{name} {
+TmlWindow::TmlWindow(int w, int h, std::string name) : width{w}, height{h}, windowName{name} {
   initWindow();
 }
 
-LveWindow::~LveWindow() {
+TmlWindow::~TmlWindow() {
   glfwDestroyWindow(window);
   glfwTerminate();
 }
 
-void LveWindow::initWindow() {
+void TmlWindow::initWindow() {
   glfwInit();
   glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
   glfwWindowHint(GLFW_RESIZABLE, GLFW_TRUE);
@@ -24,17 +24,17 @@ void LveWindow::initWindow() {
   glfwSetFramebufferSizeCallback(window, framebufferResizeCallback);
 }
 
-void LveWindow::createWindowSurface(VkInstance instance, VkSurfaceKHR *surface) {
+void TmlWindow::createWindowSurface(VkInstance instance, VkSurfaceKHR *surface) {
   if (glfwCreateWindowSurface(instance, window, nullptr, surface) != VK_SUCCESS) {
     throw std::runtime_error("failed to craete window surface");
   }
 }
 
-void LveWindow::framebufferResizeCallback(GLFWwindow *window, int width, int height) {
-  auto lveWindow = reinterpret_cast<LveWindow *>(glfwGetWindowUserPointer(window));
-  lveWindow->framebufferResized = true;
-  lveWindow->width = width;
-  lveWindow->height = height;
+void TmlWindow::framebufferResizeCallback(GLFWwindow *window, int width, int height) {
+  auto tmlWindow = reinterpret_cast<TmlWindow *>(glfwGetWindowUserPointer(window));
+  tmlWindow->framebufferResized = true;
+  tmlWindow->width = width;
+  tmlWindow->height = height;
 }
 
-}  // namespace lve
+}  // namespace tml

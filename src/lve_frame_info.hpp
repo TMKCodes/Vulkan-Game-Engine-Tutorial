@@ -1,12 +1,12 @@
 #pragma once
 
-#include "lve_camera.hpp"
-#include "lve_game_object.hpp"
+#include "tml_camera.hpp"
+#include "tml_game_object.hpp"
 
 // lib
 #include <vulkan/vulkan.h>
 
-namespace lve {
+namespace tml {
 
 #define MAX_LIGHTS 10
 
@@ -28,8 +28,8 @@ struct FrameInfo {
   int frameIndex;
   float frameTime;
   VkCommandBuffer commandBuffer;
-  LveCamera &camera;
+  TmlCamera &camera;
   VkDescriptorSet globalDescriptorSet;
-  LveGameObject::Map &gameObjects;
+  TmlGameObject::Map &gameObjects;
 };
-}  // namespace lve
+}  // namespace tml

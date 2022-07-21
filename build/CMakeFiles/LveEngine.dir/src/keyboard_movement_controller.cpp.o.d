@@ -1,12 +1,12 @@
-CMakeFiles/LveEngine.dir/src/keyboard_movement_controller.cpp.o: \
+CMakeFiles/TmlEngine.dir/src/keyboard_movement_controller.cpp.o: \
  /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/keyboard_movement_controller.cpp \
  /usr/include/stdc-predef.h \
  /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/keyboard_movement_controller.hpp \
- /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/lve_game_object.hpp \
- /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/lve_model.hpp \
- /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/lve_buffer.hpp \
- /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/lve_device.hpp \
- /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/lve_window.hpp \
+ /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/tml_game_object.hpp \
+ /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/tml_model.hpp \
+ /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/tml_buffer.hpp \
+ /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/tml_device.hpp \
+ /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/tml_window.hpp \
  /usr/include/GLFW/glfw3.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include/stddef.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include/stdint.h \

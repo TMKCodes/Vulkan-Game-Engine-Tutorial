@@ -1,8 +1,8 @@
-CMakeFiles/LveEngine.dir/src/systems/point_light_system.cpp.o: \
+CMakeFiles/TmlEngine.dir/src/systems/point_light_system.cpp.o: \
  /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/systems/point_light_system.cpp \
  /usr/include/stdc-predef.h \
  /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/systems/point_light_system.hpp \
- /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/systems/../lve_camera.hpp \
+ /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/systems/../tml_camera.hpp \
  /usr/include/glm/glm.hpp /usr/include/glm/detail/_fixes.hpp \
  /usr/include/c++/12.1.0/cmath \
  /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/c++config.h \
@@ -195,8 +195,8 @@ CMakeFiles/LveEngine.dir/src/systems/point_light_system.cpp.o: \
  /usr/include/glm/detail/type_half.hpp \
  /usr/include/glm/detail/type_half.inl /usr/include/glm/integer.hpp \
  /usr/include/glm/detail/func_integer.inl \
- /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/systems/../lve_device.hpp \
- /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/systems/../lve_window.hpp \
+ /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/systems/../tml_device.hpp \
+ /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/systems/../tml_window.hpp \
  /usr/include/GLFW/glfw3.h /usr/include/vulkan/vulkan.h \
  /usr/include/vulkan/vk_platform.h /usr/include/vulkan/vulkan_core.h \
  /usr/include/GL/gl.h /usr/include/GL/glext.h \
@@ -263,10 +263,10 @@ CMakeFiles/LveEngine.dir/src/systems/point_light_system.cpp.o: \
  /usr/include/c++/12.1.0/bits/stl_vector.h \
  /usr/include/c++/12.1.0/bits/stl_bvector.h \
  /usr/include/c++/12.1.0/bits/vector.tcc \
- /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/systems/../lve_frame_info.hpp \
- /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/systems/../lve_game_object.hpp \
- /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/systems/../lve_model.hpp \
- /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/systems/../lve_buffer.hpp \
+ /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/systems/../tml_frame_info.hpp \
+ /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/systems/../tml_game_object.hpp \
+ /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/systems/../tml_model.hpp \
+ /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/systems/../tml_buffer.hpp \
  /usr/include/c++/12.1.0/memory \
  /usr/include/c++/12.1.0/bits/stl_tempbuf.h \
  /usr/include/c++/12.1.0/bits/stl_raw_storage_iter.h \
@@ -308,7 +308,7 @@ CMakeFiles/LveEngine.dir/src/systems/point_light_system.cpp.o: \
  /usr/include/c++/12.1.0/bits/node_handle.h \
  /usr/include/c++/12.1.0/bits/unordered_map.h \
  /usr/include/c++/12.1.0/bits/erase_if.h \
- /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/systems/../lve_pipeline.hpp \
+ /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/systems/../tml_pipeline.hpp \
  /usr/include/c++/12.1.0/array /usr/include/c++/12.1.0/compare \
  /usr/include/c++/12.1.0/map /usr/include/c++/12.1.0/bits/stl_tree.h \
  /usr/include/c++/12.1.0/bits/stl_map.h \

@@ -12,7 +12,7 @@
 #include <map>
 #include <stdexcept>
 
-namespace lve {
+namespace tml {
 
 struct PointLightPushConstants {
   glm::vec4 position{};
@@ -21,14 +21,14 @@ struct PointLightPushConstants {
 };
 
 PointLightSystem::PointLightSystem(
-    LveDevice& device, VkRenderPass renderPass, VkDescriptorSetLayout globalSetLayout)
-    : lveDevice{device} {
+    TmlDevice& device, VkRenderPass renderPass, VkDescriptorSetLayout globalSetLayout)
+    : tmlDevice{device} {
   createPipelineLayout(globalSetLayout);
   createPipeline(renderPass);
 }
 
 PointLightSystem::~PointLightSystem() {
-  vkDestroyPipelineLayout(lveDevice.device(), pipelineLayout, nullptr);
+  vkDestroyPipelineLayout(tmlDevice.device(), pipelineLayout, nullptr);
 }
 
 void PointLightSystem::createPipelineLayout(VkDescriptorSetLayout globalSetLayout) {
@@ -45,7 +45,7 @@ void PointLightSystem::createPipelineLayout(VkDescriptorSetLayout globalSetLayou
   pipelineLayoutInfo.pSetLayouts = descriptorSetLayouts.data();
   pipelineLayoutInfo.pushConstantRangeCount = 1;
   pipelineLayoutInfo.pPushConstantRanges = &pushConstantRange;
-  if (vkCreatePipelineLayout(lveDevice.device(), &pipelineLayoutInfo, nullptr, &pipelineLayout) !=
+  if (vkCreatePipelineLayout(tmlDevice.device(), &pipelineLayoutInfo, nullptr, &pipelineLayout) !=
       VK_SUCCESS) {
     throw std::runtime_error("failed to create pipeline layout!");
   }
@@ -55,14 +55,14 @@ void PointLightSystem::createPipeline(VkRenderPass renderPass) {
   assert(pipelineLayout != nullptr && "Cannot create pipeline before pipeline layout");
 
   PipelineConfigInfo pipelineConfig{};
-  LvePipeline::defaultPipelineConfigInfo(pipelineConfig);
-  LvePipeline::enableAlphaBlending(pipelineConfig);
+  TmlPipeline::defaultPipelineConfigInfo(pipelineConfig);
+  TmlPipeline::enableAlphaBlending(pipelineConfig);
   pipelineConfig.attributeDescriptions.clear();
   pipelineConfig.bindingDescriptions.clear();
   pipelineConfig.renderPass = renderPass;
   pipelineConfig.pipelineLayout = pipelineLayout;
-  lvePipeline = std::make_unique<LvePipeline>(
-      lveDevice,
+  tmlPipeline = std::make_unique<TmlPipeline>(
+      tmlDevice,
       "shaders/point_light.vert.spv",
       "shaders/point_light.frag.spv",
       pipelineConfig);
@@ -91,7 +91,7 @@ void PointLightSystem::update(FrameInfo& frameInfo, GlobalUbo& ubo) {
 
 void PointLightSystem::render(FrameInfo& frameInfo) {
   // sort lights
-  std::map<float, LveGameObject::id_t> sorted;
+  std::map<float, TmlGameObject::id_t> sorted;
   for (auto& kv : frameInfo.gameObjects) {
     auto& obj = kv.second;
     if (obj.pointLight == nullptr) continue;
@@ -102,7 +102,7 @@ void PointLightSystem::render(FrameInfo& frameInfo) {
     sorted[disSquared] = obj.getId();
   }
 
-  lvePipeline->bind(frameInfo.commandBuffer);
+  tmlPipeline->bind(frameInfo.commandBuffer);
 
   vkCmdBindDescriptorSets(
       frameInfo.commandBuffer,
@@ -135,4 +135,4 @@ void PointLightSystem::render(FrameInfo& frameInfo) {
   }
 }
 
-}  // namespace lve
+}  // namespace tml

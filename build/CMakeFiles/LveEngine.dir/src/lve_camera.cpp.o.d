@@ -1,7 +1,7 @@
-CMakeFiles/LveEngine.dir/src/lve_camera.cpp.o: \
- /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/lve_camera.cpp \
+CMakeFiles/TmlEngine.dir/src/tml_camera.cpp.o: \
+ /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/tml_camera.cpp \
  /usr/include/stdc-predef.h \
- /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/lve_camera.hpp \
+ /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/tml_camera.hpp \
  /usr/include/glm/glm.hpp /usr/include/glm/detail/_fixes.hpp \
  /usr/include/c++/12.1.0/cmath \
  /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/c++config.h \

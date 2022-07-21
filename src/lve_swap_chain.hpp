@@ -1,6 +1,6 @@
 #pragma once
 
-#include "lve_device.hpp"
+#include "tml_device.hpp"
 
 // vulkan headers
 #include <vulkan/vulkan.h>
@@ -10,20 +10,20 @@
 #include <string>
 #include <vector>
 
-namespace lve {
+namespace tml {
 
-class LveSwapChain {
+class TmlSwapChain {
  public:
   static constexpr int MAX_FRAMES_IN_FLIGHT = 2;
 
-  LveSwapChain(LveDevice &deviceRef, VkExtent2D windowExtent);
-  LveSwapChain(
-      LveDevice &deviceRef, VkExtent2D windowExtent, std::shared_ptr<LveSwapChain> previous);
+  TmlSwapChain(TmlDevice &deviceRef, VkExtent2D windowExtent);
+  TmlSwapChain(
+      TmlDevice &deviceRef, VkExtent2D windowExtent, std::shared_ptr<TmlSwapChain> previous);
 
-  ~LveSwapChain();
+  ~TmlSwapChain();
 
-  LveSwapChain(const LveSwapChain &) = delete;
-  LveSwapChain &operator=(const LveSwapChain &) = delete;
+  TmlSwapChain(const TmlSwapChain &) = delete;
+  TmlSwapChain &operator=(const TmlSwapChain &) = delete;
 
   VkFramebuffer getFrameBuffer(int index) { return swapChainFramebuffers[index]; }
   VkRenderPass getRenderPass() { return renderPass; }
@@ -42,7 +42,7 @@ class LveSwapChain {
   VkResult acquireNextImage(uint32_t *imageIndex);
   VkResult submitCommandBuffers(const VkCommandBuffer *buffers, uint32_t *imageIndex);
 
-  bool compareSwapFormats(const LveSwapChain &swapChain) const {
+  bool compareSwapFormats(const TmlSwapChain &swapChain) const {
     return swapChain.swapChainDepthFormat == swapChainDepthFormat &&
            swapChain.swapChainImageFormat == swapChainImageFormat;
   }
@@ -76,11 +76,11 @@ class LveSwapChain {
   std::vector<VkImage> swapChainImages;
   std::vector<VkImageView> swapChainImageViews;
 
-  LveDevice &device;
+  TmlDevice &device;
   VkExtent2D windowExtent;
 
   VkSwapchainKHR swapChain;
-  std::shared_ptr<LveSwapChain> oldSwapChain;
+  std::shared_ptr<TmlSwapChain> oldSwapChain;
 
   std::vector<VkSemaphore> imageAvailableSemaphores;
   std::vector<VkSemaphore> renderFinishedSemaphores;
@@ -89,4 +89,4 @@ class LveSwapChain {
   size_t currentFrame = 0;
 };
 
-}  // namespace lve
+}  // namespace tml

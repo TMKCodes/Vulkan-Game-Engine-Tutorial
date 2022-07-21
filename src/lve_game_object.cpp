@@ -1,6 +1,6 @@
-#include "lve_game_object.hpp"
+#include "tml_game_object.hpp"
 
-namespace lve {
+namespace tml {
 
 glm::mat4 TransformComponent::mat4() {
   const float c3 = glm::cos(rotation.z);
@@ -59,8 +59,8 @@ glm::mat3 TransformComponent::normalMatrix() {
   };
 }
 
-LveGameObject LveGameObject::makePointLight(float intensity, float radius, glm::vec3 color) {
-  LveGameObject gameObj = LveGameObject::createGameObject();
+TmlGameObject TmlGameObject::makePointLight(float intensity, float radius, glm::vec3 color) {
+  TmlGameObject gameObj = TmlGameObject::createGameObject();
   gameObj.color = color;
   gameObj.transform.scale.x = radius;
   gameObj.pointLight = std::make_unique<PointLightComponent>();
@@ -68,4 +68,4 @@ LveGameObject LveGameObject::makePointLight(float intensity, float radius, glm::
   return gameObj;
 }
 
-}  // namespace lve
+}  // namespace tml

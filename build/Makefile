@@ -117,17 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named LveEngine
+# Target rules for targets named TmlEngine
 
 # Build rule for target.
-LveEngine: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 LveEngine
-.PHONY : LveEngine
+TmlEngine: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TmlEngine
+.PHONY : TmlEngine
 
 # fast build rule for target.
-LveEngine/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/build
-.PHONY : LveEngine/fast
+TmlEngine/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/build
+.PHONY : TmlEngine/fast
 
 #=============================================================================
 # Target rules for targets named Shaders
@@ -147,7 +147,7 @@ src/first_app.o: src/first_app.cpp.o
 
 # target to build an object file
 src/first_app.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/src/first_app.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/first_app.cpp.o
 .PHONY : src/first_app.cpp.o
 
 src/first_app.i: src/first_app.cpp.i
@@ -155,7 +155,7 @@ src/first_app.i: src/first_app.cpp.i
 
 # target to preprocess a source file
 src/first_app.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/src/first_app.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/first_app.cpp.i
 .PHONY : src/first_app.cpp.i
 
 src/first_app.s: src/first_app.cpp.s
@@ -163,7 +163,7 @@ src/first_app.s: src/first_app.cpp.s
 
 # target to generate assembly for a file
 src/first_app.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/src/first_app.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/first_app.cpp.s
 .PHONY : src/first_app.cpp.s
 
 src/keyboard_movement_controller.o: src/keyboard_movement_controller.cpp.o
@@ -171,7 +171,7 @@ src/keyboard_movement_controller.o: src/keyboard_movement_controller.cpp.o
 
 # target to build an object file
 src/keyboard_movement_controller.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/src/keyboard_movement_controller.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/keyboard_movement_controller.cpp.o
 .PHONY : src/keyboard_movement_controller.cpp.o
 
 src/keyboard_movement_controller.i: src/keyboard_movement_controller.cpp.i
@@ -179,7 +179,7 @@ src/keyboard_movement_controller.i: src/keyboard_movement_controller.cpp.i
 
 # target to preprocess a source file
 src/keyboard_movement_controller.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/src/keyboard_movement_controller.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/keyboard_movement_controller.cpp.i
 .PHONY : src/keyboard_movement_controller.cpp.i
 
 src/keyboard_movement_controller.s: src/keyboard_movement_controller.cpp.s
@@ -187,255 +187,255 @@ src/keyboard_movement_controller.s: src/keyboard_movement_controller.cpp.s
 
 # target to generate assembly for a file
 src/keyboard_movement_controller.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/src/keyboard_movement_controller.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/keyboard_movement_controller.cpp.s
 .PHONY : src/keyboard_movement_controller.cpp.s
 
-src/lve_buffer.o: src/lve_buffer.cpp.o
-.PHONY : src/lve_buffer.o
+src/tml_buffer.o: src/tml_buffer.cpp.o
+.PHONY : src/tml_buffer.o
 
 # target to build an object file
-src/lve_buffer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/src/lve_buffer.cpp.o
-.PHONY : src/lve_buffer.cpp.o
+src/tml_buffer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/tml_buffer.cpp.o
+.PHONY : src/tml_buffer.cpp.o
 
-src/lve_buffer.i: src/lve_buffer.cpp.i
-.PHONY : src/lve_buffer.i
+src/tml_buffer.i: src/tml_buffer.cpp.i
+.PHONY : src/tml_buffer.i
 
 # target to preprocess a source file
-src/lve_buffer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/src/lve_buffer.cpp.i
-.PHONY : src/lve_buffer.cpp.i
+src/tml_buffer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/tml_buffer.cpp.i
+.PHONY : src/tml_buffer.cpp.i
 
-src/lve_buffer.s: src/lve_buffer.cpp.s
-.PHONY : src/lve_buffer.s
+src/tml_buffer.s: src/tml_buffer.cpp.s
+.PHONY : src/tml_buffer.s
 
 # target to generate assembly for a file
-src/lve_buffer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/src/lve_buffer.cpp.s
-.PHONY : src/lve_buffer.cpp.s
+src/tml_buffer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/tml_buffer.cpp.s
+.PHONY : src/tml_buffer.cpp.s
 
-src/lve_camera.o: src/lve_camera.cpp.o
-.PHONY : src/lve_camera.o
+src/tml_camera.o: src/tml_camera.cpp.o
+.PHONY : src/tml_camera.o
 
 # target to build an object file
-src/lve_camera.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/src/lve_camera.cpp.o
-.PHONY : src/lve_camera.cpp.o
+src/tml_camera.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/tml_camera.cpp.o
+.PHONY : src/tml_camera.cpp.o
 
-src/lve_camera.i: src/lve_camera.cpp.i
-.PHONY : src/lve_camera.i
+src/tml_camera.i: src/tml_camera.cpp.i
+.PHONY : src/tml_camera.i
 
 # target to preprocess a source file
-src/lve_camera.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/src/lve_camera.cpp.i
-.PHONY : src/lve_camera.cpp.i
+src/tml_camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/tml_camera.cpp.i
+.PHONY : src/tml_camera.cpp.i
 
-src/lve_camera.s: src/lve_camera.cpp.s
-.PHONY : src/lve_camera.s
+src/tml_camera.s: src/tml_camera.cpp.s
+.PHONY : src/tml_camera.s
 
 # target to generate assembly for a file
-src/lve_camera.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/src/lve_camera.cpp.s
-.PHONY : src/lve_camera.cpp.s
+src/tml_camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/tml_camera.cpp.s
+.PHONY : src/tml_camera.cpp.s
 
-src/lve_descriptors.o: src/lve_descriptors.cpp.o
-.PHONY : src/lve_descriptors.o
+src/tml_descriptors.o: src/tml_descriptors.cpp.o
+.PHONY : src/tml_descriptors.o
 
 # target to build an object file
-src/lve_descriptors.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/src/lve_descriptors.cpp.o
-.PHONY : src/lve_descriptors.cpp.o
+src/tml_descriptors.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/tml_descriptors.cpp.o
+.PHONY : src/tml_descriptors.cpp.o
 
-src/lve_descriptors.i: src/lve_descriptors.cpp.i
-.PHONY : src/lve_descriptors.i
+src/tml_descriptors.i: src/tml_descriptors.cpp.i
+.PHONY : src/tml_descriptors.i
 
 # target to preprocess a source file
-src/lve_descriptors.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/src/lve_descriptors.cpp.i
-.PHONY : src/lve_descriptors.cpp.i
+src/tml_descriptors.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/tml_descriptors.cpp.i
+.PHONY : src/tml_descriptors.cpp.i
 
-src/lve_descriptors.s: src/lve_descriptors.cpp.s
-.PHONY : src/lve_descriptors.s
+src/tml_descriptors.s: src/tml_descriptors.cpp.s
+.PHONY : src/tml_descriptors.s
 
 # target to generate assembly for a file
-src/lve_descriptors.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/src/lve_descriptors.cpp.s
-.PHONY : src/lve_descriptors.cpp.s
+src/tml_descriptors.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/tml_descriptors.cpp.s
+.PHONY : src/tml_descriptors.cpp.s
 
-src/lve_device.o: src/lve_device.cpp.o
-.PHONY : src/lve_device.o
+src/tml_device.o: src/tml_device.cpp.o
+.PHONY : src/tml_device.o
 
 # target to build an object file
-src/lve_device.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/src/lve_device.cpp.o
-.PHONY : src/lve_device.cpp.o
+src/tml_device.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/tml_device.cpp.o
+.PHONY : src/tml_device.cpp.o
 
-src/lve_device.i: src/lve_device.cpp.i
-.PHONY : src/lve_device.i
+src/tml_device.i: src/tml_device.cpp.i
+.PHONY : src/tml_device.i
 
 # target to preprocess a source file
-src/lve_device.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/src/lve_device.cpp.i
-.PHONY : src/lve_device.cpp.i
+src/tml_device.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/tml_device.cpp.i
+.PHONY : src/tml_device.cpp.i
 
-src/lve_device.s: src/lve_device.cpp.s
-.PHONY : src/lve_device.s
+src/tml_device.s: src/tml_device.cpp.s
+.PHONY : src/tml_device.s
 
 # target to generate assembly for a file
-src/lve_device.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/src/lve_device.cpp.s
-.PHONY : src/lve_device.cpp.s
+src/tml_device.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/tml_device.cpp.s
+.PHONY : src/tml_device.cpp.s
 
-src/lve_game_object.o: src/lve_game_object.cpp.o
-.PHONY : src/lve_game_object.o
+src/tml_game_object.o: src/tml_game_object.cpp.o
+.PHONY : src/tml_game_object.o
 
 # target to build an object file
-src/lve_game_object.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/src/lve_game_object.cpp.o
-.PHONY : src/lve_game_object.cpp.o
+src/tml_game_object.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/tml_game_object.cpp.o
+.PHONY : src/tml_game_object.cpp.o
 
-src/lve_game_object.i: src/lve_game_object.cpp.i
-.PHONY : src/lve_game_object.i
+src/tml_game_object.i: src/tml_game_object.cpp.i
+.PHONY : src/tml_game_object.i
 
 # target to preprocess a source file
-src/lve_game_object.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/src/lve_game_object.cpp.i
-.PHONY : src/lve_game_object.cpp.i
+src/tml_game_object.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/tml_game_object.cpp.i
+.PHONY : src/tml_game_object.cpp.i
 
-src/lve_game_object.s: src/lve_game_object.cpp.s
-.PHONY : src/lve_game_object.s
+src/tml_game_object.s: src/tml_game_object.cpp.s
+.PHONY : src/tml_game_object.s
 
 # target to generate assembly for a file
-src/lve_game_object.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/src/lve_game_object.cpp.s
-.PHONY : src/lve_game_object.cpp.s
+src/tml_game_object.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/tml_game_object.cpp.s
+.PHONY : src/tml_game_object.cpp.s
 
-src/lve_model.o: src/lve_model.cpp.o
-.PHONY : src/lve_model.o
+src/tml_model.o: src/tml_model.cpp.o
+.PHONY : src/tml_model.o
 
 # target to build an object file
-src/lve_model.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/src/lve_model.cpp.o
-.PHONY : src/lve_model.cpp.o
+src/tml_model.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/tml_model.cpp.o
+.PHONY : src/tml_model.cpp.o
 
-src/lve_model.i: src/lve_model.cpp.i
-.PHONY : src/lve_model.i
+src/tml_model.i: src/tml_model.cpp.i
+.PHONY : src/tml_model.i
 
 # target to preprocess a source file
-src/lve_model.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/src/lve_model.cpp.i
-.PHONY : src/lve_model.cpp.i
+src/tml_model.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/tml_model.cpp.i
+.PHONY : src/tml_model.cpp.i
 
-src/lve_model.s: src/lve_model.cpp.s
-.PHONY : src/lve_model.s
+src/tml_model.s: src/tml_model.cpp.s
+.PHONY : src/tml_model.s
 
 # target to generate assembly for a file
-src/lve_model.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/src/lve_model.cpp.s
-.PHONY : src/lve_model.cpp.s
+src/tml_model.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/tml_model.cpp.s
+.PHONY : src/tml_model.cpp.s
 
-src/lve_pipeline.o: src/lve_pipeline.cpp.o
-.PHONY : src/lve_pipeline.o
+src/tml_pipeline.o: src/tml_pipeline.cpp.o
+.PHONY : src/tml_pipeline.o
 
 # target to build an object file
-src/lve_pipeline.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/src/lve_pipeline.cpp.o
-.PHONY : src/lve_pipeline.cpp.o
+src/tml_pipeline.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/tml_pipeline.cpp.o
+.PHONY : src/tml_pipeline.cpp.o
 
-src/lve_pipeline.i: src/lve_pipeline.cpp.i
-.PHONY : src/lve_pipeline.i
+src/tml_pipeline.i: src/tml_pipeline.cpp.i
+.PHONY : src/tml_pipeline.i
 
 # target to preprocess a source file
-src/lve_pipeline.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/src/lve_pipeline.cpp.i
-.PHONY : src/lve_pipeline.cpp.i
+src/tml_pipeline.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/tml_pipeline.cpp.i
+.PHONY : src/tml_pipeline.cpp.i
 
-src/lve_pipeline.s: src/lve_pipeline.cpp.s
-.PHONY : src/lve_pipeline.s
+src/tml_pipeline.s: src/tml_pipeline.cpp.s
+.PHONY : src/tml_pipeline.s
 
 # target to generate assembly for a file
-src/lve_pipeline.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/src/lve_pipeline.cpp.s
-.PHONY : src/lve_pipeline.cpp.s
+src/tml_pipeline.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/tml_pipeline.cpp.s
+.PHONY : src/tml_pipeline.cpp.s
 
-src/lve_renderer.o: src/lve_renderer.cpp.o
-.PHONY : src/lve_renderer.o
+src/tml_renderer.o: src/tml_renderer.cpp.o
+.PHONY : src/tml_renderer.o
 
 # target to build an object file
-src/lve_renderer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/src/lve_renderer.cpp.o
-.PHONY : src/lve_renderer.cpp.o
+src/tml_renderer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/tml_renderer.cpp.o
+.PHONY : src/tml_renderer.cpp.o
 
-src/lve_renderer.i: src/lve_renderer.cpp.i
-.PHONY : src/lve_renderer.i
+src/tml_renderer.i: src/tml_renderer.cpp.i
+.PHONY : src/tml_renderer.i
 
 # target to preprocess a source file
-src/lve_renderer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/src/lve_renderer.cpp.i
-.PHONY : src/lve_renderer.cpp.i
+src/tml_renderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/tml_renderer.cpp.i
+.PHONY : src/tml_renderer.cpp.i
 
-src/lve_renderer.s: src/lve_renderer.cpp.s
-.PHONY : src/lve_renderer.s
+src/tml_renderer.s: src/tml_renderer.cpp.s
+.PHONY : src/tml_renderer.s
 
 # target to generate assembly for a file
-src/lve_renderer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/src/lve_renderer.cpp.s
-.PHONY : src/lve_renderer.cpp.s
+src/tml_renderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/tml_renderer.cpp.s
+.PHONY : src/tml_renderer.cpp.s
 
-src/lve_swap_chain.o: src/lve_swap_chain.cpp.o
-.PHONY : src/lve_swap_chain.o
+src/tml_swap_chain.o: src/tml_swap_chain.cpp.o
+.PHONY : src/tml_swap_chain.o
 
 # target to build an object file
-src/lve_swap_chain.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/src/lve_swap_chain.cpp.o
-.PHONY : src/lve_swap_chain.cpp.o
+src/tml_swap_chain.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/tml_swap_chain.cpp.o
+.PHONY : src/tml_swap_chain.cpp.o
 
-src/lve_swap_chain.i: src/lve_swap_chain.cpp.i
-.PHONY : src/lve_swap_chain.i
+src/tml_swap_chain.i: src/tml_swap_chain.cpp.i
+.PHONY : src/tml_swap_chain.i
 
 # target to preprocess a source file
-src/lve_swap_chain.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/src/lve_swap_chain.cpp.i
-.PHONY : src/lve_swap_chain.cpp.i
+src/tml_swap_chain.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/tml_swap_chain.cpp.i
+.PHONY : src/tml_swap_chain.cpp.i
 
-src/lve_swap_chain.s: src/lve_swap_chain.cpp.s
-.PHONY : src/lve_swap_chain.s
+src/tml_swap_chain.s: src/tml_swap_chain.cpp.s
+.PHONY : src/tml_swap_chain.s
 
 # target to generate assembly for a file
-src/lve_swap_chain.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/src/lve_swap_chain.cpp.s
-.PHONY : src/lve_swap_chain.cpp.s
+src/tml_swap_chain.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/tml_swap_chain.cpp.s
+.PHONY : src/tml_swap_chain.cpp.s
 
-src/lve_window.o: src/lve_window.cpp.o
-.PHONY : src/lve_window.o
+src/tml_window.o: src/tml_window.cpp.o
+.PHONY : src/tml_window.o
 
 # target to build an object file
-src/lve_window.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/src/lve_window.cpp.o
-.PHONY : src/lve_window.cpp.o
+src/tml_window.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/tml_window.cpp.o
+.PHONY : src/tml_window.cpp.o
 
-src/lve_window.i: src/lve_window.cpp.i
-.PHONY : src/lve_window.i
+src/tml_window.i: src/tml_window.cpp.i
+.PHONY : src/tml_window.i
 
 # target to preprocess a source file
-src/lve_window.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/src/lve_window.cpp.i
-.PHONY : src/lve_window.cpp.i
+src/tml_window.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/tml_window.cpp.i
+.PHONY : src/tml_window.cpp.i
 
-src/lve_window.s: src/lve_window.cpp.s
-.PHONY : src/lve_window.s
+src/tml_window.s: src/tml_window.cpp.s
+.PHONY : src/tml_window.s
 
 # target to generate assembly for a file
-src/lve_window.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/src/lve_window.cpp.s
-.PHONY : src/lve_window.cpp.s
+src/tml_window.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/tml_window.cpp.s
+.PHONY : src/tml_window.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -443,7 +443,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -451,7 +451,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 src/systems/point_light_system.o: src/systems/point_light_system.cpp.o
@@ -459,7 +459,7 @@ src/systems/point_light_system.o: src/systems/point_light_system.cpp.o
 
 # target to build an object file
 src/systems/point_light_system.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/src/systems/point_light_system.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/systems/point_light_system.cpp.o
 .PHONY : src/systems/point_light_system.cpp.o
 
 src/systems/point_light_system.i: src/systems/point_light_system.cpp.i
@@ -467,7 +467,7 @@ src/systems/point_light_system.i: src/systems/point_light_system.cpp.i
 
 # target to preprocess a source file
 src/systems/point_light_system.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/src/systems/point_light_system.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/systems/point_light_system.cpp.i
 .PHONY : src/systems/point_light_system.cpp.i
 
 src/systems/point_light_system.s: src/systems/point_light_system.cpp.s
@@ -475,7 +475,7 @@ src/systems/point_light_system.s: src/systems/point_light_system.cpp.s
 
 # target to generate assembly for a file
 src/systems/point_light_system.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/src/systems/point_light_system.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/systems/point_light_system.cpp.s
 .PHONY : src/systems/point_light_system.cpp.s
 
 src/systems/simple_render_system.o: src/systems/simple_render_system.cpp.o
@@ -483,7 +483,7 @@ src/systems/simple_render_system.o: src/systems/simple_render_system.cpp.o
 
 # target to build an object file
 src/systems/simple_render_system.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/src/systems/simple_render_system.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/systems/simple_render_system.cpp.o
 .PHONY : src/systems/simple_render_system.cpp.o
 
 src/systems/simple_render_system.i: src/systems/simple_render_system.cpp.i
@@ -491,7 +491,7 @@ src/systems/simple_render_system.i: src/systems/simple_render_system.cpp.i
 
 # target to preprocess a source file
 src/systems/simple_render_system.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/src/systems/simple_render_system.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/systems/simple_render_system.cpp.i
 .PHONY : src/systems/simple_render_system.cpp.i
 
 src/systems/simple_render_system.s: src/systems/simple_render_system.cpp.s
@@ -499,7 +499,7 @@ src/systems/simple_render_system.s: src/systems/simple_render_system.cpp.s
 
 # target to generate assembly for a file
 src/systems/simple_render_system.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LveEngine.dir/build.make CMakeFiles/LveEngine.dir/src/systems/simple_render_system.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/systems/simple_render_system.cpp.s
 .PHONY : src/systems/simple_render_system.cpp.s
 
 # Help Target
@@ -511,43 +511,43 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Shaders"
-	@echo "... LveEngine"
+	@echo "... TmlEngine"
 	@echo "... src/first_app.o"
 	@echo "... src/first_app.i"
 	@echo "... src/first_app.s"
 	@echo "... src/keyboard_movement_controller.o"
 	@echo "... src/keyboard_movement_controller.i"
 	@echo "... src/keyboard_movement_controller.s"
-	@echo "... src/lve_buffer.o"
-	@echo "... src/lve_buffer.i"
-	@echo "... src/lve_buffer.s"
-	@echo "... src/lve_camera.o"
-	@echo "... src/lve_camera.i"
-	@echo "... src/lve_camera.s"
-	@echo "... src/lve_descriptors.o"
-	@echo "... src/lve_descriptors.i"
-	@echo "... src/lve_descriptors.s"
-	@echo "... src/lve_device.o"
-	@echo "... src/lve_device.i"
-	@echo "... src/lve_device.s"
-	@echo "... src/lve_game_object.o"
-	@echo "... src/lve_game_object.i"
-	@echo "... src/lve_game_object.s"
-	@echo "... src/lve_model.o"
-	@echo "... src/lve_model.i"
-	@echo "... src/lve_model.s"
-	@echo "... src/lve_pipeline.o"
-	@echo "... src/lve_pipeline.i"
-	@echo "... src/lve_pipeline.s"
-	@echo "... src/lve_renderer.o"
-	@echo "... src/lve_renderer.i"
-	@echo "... src/lve_renderer.s"
-	@echo "... src/lve_swap_chain.o"
-	@echo "... src/lve_swap_chain.i"
-	@echo "... src/lve_swap_chain.s"
-	@echo "... src/lve_window.o"
-	@echo "... src/lve_window.i"
-	@echo "... src/lve_window.s"
+	@echo "... src/tml_buffer.o"
+	@echo "... src/tml_buffer.i"
+	@echo "... src/tml_buffer.s"
+	@echo "... src/tml_camera.o"
+	@echo "... src/tml_camera.i"
+	@echo "... src/tml_camera.s"
+	@echo "... src/tml_descriptors.o"
+	@echo "... src/tml_descriptors.i"
+	@echo "... src/tml_descriptors.s"
+	@echo "... src/tml_device.o"
+	@echo "... src/tml_device.i"
+	@echo "... src/tml_device.s"
+	@echo "... src/tml_game_object.o"
+	@echo "... src/tml_game_object.i"
+	@echo "... src/tml_game_object.s"
+	@echo "... src/tml_model.o"
+	@echo "... src/tml_model.i"
+	@echo "... src/tml_model.s"
+	@echo "... src/tml_pipeline.o"
+	@echo "... src/tml_pipeline.i"
+	@echo "... src/tml_pipeline.s"
+	@echo "... src/tml_renderer.o"
+	@echo "... src/tml_renderer.i"
+	@echo "... src/tml_renderer.s"
+	@echo "... src/tml_swap_chain.o"
+	@echo "... src/tml_swap_chain.i"
+	@echo "... src/tml_swap_chain.s"
+	@echo "... src/tml_window.o"
+	@echo "... src/tml_window.i"
+	@echo "... src/tml_window.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

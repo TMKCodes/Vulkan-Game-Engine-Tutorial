@@ -1,20 +1,20 @@
 #pragma once
 
-#include "../lve_camera.hpp"
-#include "../lve_device.hpp"
-#include "../lve_frame_info.hpp"
-#include "../lve_game_object.hpp"
-#include "../lve_pipeline.hpp"
+#include "../tml_camera.hpp"
+#include "../tml_device.hpp"
+#include "../tml_frame_info.hpp"
+#include "../tml_game_object.hpp"
+#include "../tml_pipeline.hpp"
 
 // std
 #include <memory>
 #include <vector>
 
-namespace lve {
+namespace tml {
 class PointLightSystem {
  public:
   PointLightSystem(
-      LveDevice &device, VkRenderPass renderPass, VkDescriptorSetLayout globalSetLayout);
+      TmlDevice &device, VkRenderPass renderPass, VkDescriptorSetLayout globalSetLayout);
   ~PointLightSystem();
 
   PointLightSystem(const PointLightSystem &) = delete;
@@ -27,9 +27,9 @@ class PointLightSystem {
   void createPipelineLayout(VkDescriptorSetLayout globalSetLayout);
   void createPipeline(VkRenderPass renderPass);
 
-  LveDevice &lveDevice;
+  TmlDevice &tmlDevice;
 
-  std::unique_ptr<LvePipeline> lvePipeline;
+  std::unique_ptr<TmlPipeline> tmlPipeline;
   VkPipelineLayout pipelineLayout;
 };
-}  // namespace lve
+}  // namespace tml

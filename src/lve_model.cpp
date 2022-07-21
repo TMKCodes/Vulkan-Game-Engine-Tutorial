@@ -1,6 +1,6 @@
-#include "lve_model.hpp"
+#include "tml_model.hpp"
 
-#include "lve_utils.hpp"
+#include "tml_utils.hpp"
 
 // libs
 #define TINYOBJLOADER_IMPLEMENTATION
@@ -19,39 +19,39 @@
 
 namespace std {
 template <>
-struct hash<lve::LveModel::Vertex> {
-  size_t operator()(lve::LveModel::Vertex const &vertex) const {
+struct hash<tml::TmlModel::Vertex> {
+  size_t operator()(tml::TmlModel::Vertex const &vertex) const {
     size_t seed = 0;
-    lve::hashCombine(seed, vertex.position, vertex.color, vertex.normal, vertex.uv);
+    tml::hashCombine(seed, vertex.position, vertex.color, vertex.normal, vertex.uv);
     return seed;
   }
 };
 }  // namespace std
 
-namespace lve {
+namespace tml {
 
-LveModel::LveModel(LveDevice &device, const LveModel::Builder &builder) : lveDevice{device} {
+TmlModel::TmlModel(TmlDevice &device, const TmlModel::Builder &builder) : tmlDevice{device} {
   createVertexBuffers(builder.vertices);
   createIndexBuffers(builder.indices);
 }
 
-LveModel::~LveModel() {}
+TmlModel::~TmlModel() {}
 
-std::unique_ptr<LveModel> LveModel::createModelFromFile(
-    LveDevice &device, const std::string &filepath) {
+std::unique_ptr<TmlModel> TmlModel::createModelFromFile(
+    TmlDevice &device, const std::string &filepath) {
   Builder builder{};
   builder.loadModel(ENGINE_DIR + filepath);
-  return std::make_unique<LveModel>(device, builder);
+  return std::make_unique<TmlModel>(device, builder);
 }
 
-void LveModel::createVertexBuffers(const std::vector<Vertex> &vertices) {
+void TmlModel::createVertexBuffers(const std::vector<Vertex> &vertices) {
   vertexCount = static_cast<uint32_t>(vertices.size());
   assert(vertexCount >= 3 && "Vertex count must be at least 3");
   VkDeviceSize bufferSize = sizeof(vertices[0]) * vertexCount;
   uint32_t vertexSize = sizeof(vertices[0]);
 
-  LveBuffer stagingBuffer{
-      lveDevice,
+  TmlBuffer stagingBuffer{
+      tmlDevice,
       vertexSize,
       vertexCount,
       VK_BUFFER_USAGE_TRANSFER_SRC_BIT,
@@ -61,17 +61,17 @@ void LveModel::createVertexBuffers(const std::vector<Vertex> &vertices) {
   stagingBuffer.map();
   stagingBuffer.writeToBuffer((void *)vertices.data());
 
-  vertexBuffer = std::make_unique<LveBuffer>(
-      lveDevice,
+  vertexBuffer = std::make_unique<TmlBuffer>(
+      tmlDevice,
       vertexSize,
       vertexCount,
       VK_BUFFER_USAGE_VERTEX_BUFFER_BIT | VK_BUFFER_USAGE_TRANSFER_DST_BIT,
       VK_MEMORY_PROPERTY_DEVICE_LOCAL_BIT);
 
-  lveDevice.copyBuffer(stagingBuffer.getBuffer(), vertexBuffer->getBuffer(), bufferSize);
+  tmlDevice.copyBuffer(stagingBuffer.getBuffer(), vertexBuffer->getBuffer(), bufferSize);
 }
 
-void LveModel::createIndexBuffers(const std::vector<uint32_t> &indices) {
+void TmlModel::createIndexBuffers(const std::vector<uint32_t> &indices) {
   indexCount = static_cast<uint32_t>(indices.size());
   hasIndexBuffer = indexCount > 0;
 
@@ -82,8 +82,8 @@ void LveModel::createIndexBuffers(const std::vector<uint32_t> &indices) {
   VkDeviceSize bufferSize = sizeof(indices[0]) * indexCount;
   uint32_t indexSize = sizeof(indices[0]);
 
-  LveBuffer stagingBuffer{
-      lveDevice,
+  TmlBuffer stagingBuffer{
+      tmlDevice,
       indexSize,
       indexCount,
       VK_BUFFER_USAGE_TRANSFER_SRC_BIT,
@@ -93,17 +93,17 @@ void LveModel::createIndexBuffers(const std::vector<uint32_t> &indices) {
   stagingBuffer.map();
   stagingBuffer.writeToBuffer((void *)indices.data());
 
-  indexBuffer = std::make_unique<LveBuffer>(
-      lveDevice,
+  indexBuffer = std::make_unique<TmlBuffer>(
+      tmlDevice,
       indexSize,
       indexCount,
       VK_BUFFER_USAGE_INDEX_BUFFER_BIT | VK_BUFFER_USAGE_TRANSFER_DST_BIT,
       VK_MEMORY_PROPERTY_DEVICE_LOCAL_BIT);
 
-  lveDevice.copyBuffer(stagingBuffer.getBuffer(), indexBuffer->getBuffer(), bufferSize);
+  tmlDevice.copyBuffer(stagingBuffer.getBuffer(), indexBuffer->getBuffer(), bufferSize);
 }
 
-void LveModel::draw(VkCommandBuffer commandBuffer) {
+void TmlModel::draw(VkCommandBuffer commandBuffer) {
   if (hasIndexBuffer) {
     vkCmdDrawIndexed(commandBuffer, indexCount, 1, 0, 0, 0);
   } else {
@@ -111,7 +111,7 @@ void LveModel::draw(VkCommandBuffer commandBuffer) {
   }
 }
 
-void LveModel::bind(VkCommandBuffer commandBuffer) {
+void TmlModel::bind(VkCommandBuffer commandBuffer) {
   VkBuffer buffers[] = {vertexBuffer->getBuffer()};
   VkDeviceSize offsets[] = {0};
   vkCmdBindVertexBuffers(commandBuffer, 0, 1, buffers, offsets);
@@ -121,7 +121,7 @@ void LveModel::bind(VkCommandBuffer commandBuffer) {
   }
 }
 
-std::vector<VkVertexInputBindingDescription> LveModel::Vertex::getBindingDescriptions() {
+std::vector<VkVertexInputBindingDescription> TmlModel::Vertex::getBindingDescriptions() {
   std::vector<VkVertexInputBindingDescription> bindingDescriptions(1);
   bindingDescriptions[0].binding = 0;
   bindingDescriptions[0].stride = sizeof(Vertex);
@@ -129,7 +129,7 @@ std::vector<VkVertexInputBindingDescription> LveModel::Vertex::getBindingDescrip
   return bindingDescriptions;
 }
 
-std::vector<VkVertexInputAttributeDescription> LveModel::Vertex::getAttributeDescriptions() {
+std::vector<VkVertexInputAttributeDescription> TmlModel::Vertex::getAttributeDescriptions() {
   std::vector<VkVertexInputAttributeDescription> attributeDescriptions{};
 
   attributeDescriptions.push_back({0, 0, VK_FORMAT_R32G32B32_SFLOAT, offsetof(Vertex, position)});
@@ -140,7 +140,7 @@ std::vector<VkVertexInputAttributeDescription> LveModel::Vertex::getAttributeDes
   return attributeDescriptions;
 }
 
-void LveModel::Builder::loadModel(const std::string &filepath) {
+void TmlModel::Builder::loadModel(const std::string &filepath) {
   tinyobj::attrib_t attrib;
   std::vector<tinyobj::shape_t> shapes;
   std::vector<tinyobj::material_t> materials;
@@ -196,4 +196,4 @@ void LveModel::Builder::loadModel(const std::string &filepath) {
   }
 }
 
-}  // namespace lve
+}  // namespace tml

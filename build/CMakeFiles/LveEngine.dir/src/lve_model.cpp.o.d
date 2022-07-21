@@ -1,10 +1,10 @@
-CMakeFiles/LveEngine.dir/src/lve_model.cpp.o: \
- /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/lve_model.cpp \
+CMakeFiles/TmlEngine.dir/src/tml_model.cpp.o: \
+ /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/tml_model.cpp \
  /usr/include/stdc-predef.h \
- /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/lve_model.hpp \
- /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/lve_buffer.hpp \
- /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/lve_device.hpp \
- /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/lve_window.hpp \
+ /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/tml_model.hpp \
+ /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/tml_buffer.hpp \
+ /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/tml_device.hpp \
+ /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/tml_window.hpp \
  /usr/include/GLFW/glfw3.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include/stddef.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include/stdint.h \
@@ -285,7 +285,7 @@ CMakeFiles/LveEngine.dir/src/lve_model.cpp.o: \
  /usr/include/c++/12.1.0/backward/auto_ptr.h \
  /usr/include/c++/12.1.0/pstl/glue_memory_defs.h \
  /usr/include/c++/12.1.0/pstl/execution_defs.h \
- /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/lve_utils.hpp \
+ /run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo\ Engine/src/tml_utils.hpp \
  /usr/include/c++/12.1.0/functional \
  /usr/include/c++/12.1.0/bits/std_function.h \
  /usr/include/c++/12.1.0/unordered_map \
