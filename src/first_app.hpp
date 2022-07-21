@@ -1,10 +1,10 @@
 #pragma once
 
-#include "tml_descriptors.hpp"
-#include "tml_device.hpp"
-#include "tml_game_object.hpp"
-#include "tml_renderer.hpp"
-#include "tml_window.hpp"
+#include "renderer/tml_descriptors.hpp"
+#include "renderer/tml_device.hpp"
+#include "renderer/tml_game_object.hpp"
+#include "renderer/tml_renderer.hpp"
+#include "renderer/tml_window.hpp"
 
 // std
 #include <memory>

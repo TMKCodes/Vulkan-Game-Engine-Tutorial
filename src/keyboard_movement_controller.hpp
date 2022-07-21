@@ -1,7 +1,7 @@
 #pragma once
 
-#include "tml_game_object.hpp"
-#include "tml_window.hpp"
+#include "renderer/tml_game_object.hpp"
+#include "renderer/tml_window.hpp"
 
 namespace tml {
 class KeyboardMovementController {

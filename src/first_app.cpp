@@ -1,10 +1,10 @@
 #include "first_app.hpp"
 
 #include "keyboard_movement_controller.hpp"
-#include "tml_buffer.hpp"
-#include "tml_camera.hpp"
-#include "systems/point_light_system.hpp"
-#include "systems/simple_render_system.hpp"
+#include "renderer/tml_buffer.hpp"
+#include "renderer/tml_camera.hpp"
+#include "renderer/systems/point_light_system.hpp"
+#include "renderer/systems/simple_render_system.hpp"
 
 // libs
 #define GLM_FORCE_RADIANS
