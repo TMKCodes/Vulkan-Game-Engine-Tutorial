@@ -1,6 +1,6 @@
 #pragma once
 
-#include "tml_device.hpp"
+#include "device.hpp"
 
 // std
 #include <string>

@@ -1,6 +1,6 @@
-#include "tml_pipeline.hpp"
+#include "pipeline.hpp"
 
-#include "tml_model.hpp"
+#include "model.hpp"
 
 // std
 #include <cassert>

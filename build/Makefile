@@ -214,6 +214,222 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/renderer/buffer.o: src/renderer/buffer.cpp.o
+.PHONY : src/renderer/buffer.o
+
+# target to build an object file
+src/renderer/buffer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/buffer.cpp.o
+.PHONY : src/renderer/buffer.cpp.o
+
+src/renderer/buffer.i: src/renderer/buffer.cpp.i
+.PHONY : src/renderer/buffer.i
+
+# target to preprocess a source file
+src/renderer/buffer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/buffer.cpp.i
+.PHONY : src/renderer/buffer.cpp.i
+
+src/renderer/buffer.s: src/renderer/buffer.cpp.s
+.PHONY : src/renderer/buffer.s
+
+# target to generate assembly for a file
+src/renderer/buffer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/buffer.cpp.s
+.PHONY : src/renderer/buffer.cpp.s
+
+src/renderer/camera.o: src/renderer/camera.cpp.o
+.PHONY : src/renderer/camera.o
+
+# target to build an object file
+src/renderer/camera.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/camera.cpp.o
+.PHONY : src/renderer/camera.cpp.o
+
+src/renderer/camera.i: src/renderer/camera.cpp.i
+.PHONY : src/renderer/camera.i
+
+# target to preprocess a source file
+src/renderer/camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/camera.cpp.i
+.PHONY : src/renderer/camera.cpp.i
+
+src/renderer/camera.s: src/renderer/camera.cpp.s
+.PHONY : src/renderer/camera.s
+
+# target to generate assembly for a file
+src/renderer/camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/camera.cpp.s
+.PHONY : src/renderer/camera.cpp.s
+
+src/renderer/descriptors.o: src/renderer/descriptors.cpp.o
+.PHONY : src/renderer/descriptors.o
+
+# target to build an object file
+src/renderer/descriptors.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/descriptors.cpp.o
+.PHONY : src/renderer/descriptors.cpp.o
+
+src/renderer/descriptors.i: src/renderer/descriptors.cpp.i
+.PHONY : src/renderer/descriptors.i
+
+# target to preprocess a source file
+src/renderer/descriptors.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/descriptors.cpp.i
+.PHONY : src/renderer/descriptors.cpp.i
+
+src/renderer/descriptors.s: src/renderer/descriptors.cpp.s
+.PHONY : src/renderer/descriptors.s
+
+# target to generate assembly for a file
+src/renderer/descriptors.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/descriptors.cpp.s
+.PHONY : src/renderer/descriptors.cpp.s
+
+src/renderer/device.o: src/renderer/device.cpp.o
+.PHONY : src/renderer/device.o
+
+# target to build an object file
+src/renderer/device.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/device.cpp.o
+.PHONY : src/renderer/device.cpp.o
+
+src/renderer/device.i: src/renderer/device.cpp.i
+.PHONY : src/renderer/device.i
+
+# target to preprocess a source file
+src/renderer/device.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/device.cpp.i
+.PHONY : src/renderer/device.cpp.i
+
+src/renderer/device.s: src/renderer/device.cpp.s
+.PHONY : src/renderer/device.s
+
+# target to generate assembly for a file
+src/renderer/device.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/device.cpp.s
+.PHONY : src/renderer/device.cpp.s
+
+src/renderer/game_object.o: src/renderer/game_object.cpp.o
+.PHONY : src/renderer/game_object.o
+
+# target to build an object file
+src/renderer/game_object.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/game_object.cpp.o
+.PHONY : src/renderer/game_object.cpp.o
+
+src/renderer/game_object.i: src/renderer/game_object.cpp.i
+.PHONY : src/renderer/game_object.i
+
+# target to preprocess a source file
+src/renderer/game_object.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/game_object.cpp.i
+.PHONY : src/renderer/game_object.cpp.i
+
+src/renderer/game_object.s: src/renderer/game_object.cpp.s
+.PHONY : src/renderer/game_object.s
+
+# target to generate assembly for a file
+src/renderer/game_object.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/game_object.cpp.s
+.PHONY : src/renderer/game_object.cpp.s
+
+src/renderer/model.o: src/renderer/model.cpp.o
+.PHONY : src/renderer/model.o
+
+# target to build an object file
+src/renderer/model.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/model.cpp.o
+.PHONY : src/renderer/model.cpp.o
+
+src/renderer/model.i: src/renderer/model.cpp.i
+.PHONY : src/renderer/model.i
+
+# target to preprocess a source file
+src/renderer/model.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/model.cpp.i
+.PHONY : src/renderer/model.cpp.i
+
+src/renderer/model.s: src/renderer/model.cpp.s
+.PHONY : src/renderer/model.s
+
+# target to generate assembly for a file
+src/renderer/model.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/model.cpp.s
+.PHONY : src/renderer/model.cpp.s
+
+src/renderer/pipeline.o: src/renderer/pipeline.cpp.o
+.PHONY : src/renderer/pipeline.o
+
+# target to build an object file
+src/renderer/pipeline.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/pipeline.cpp.o
+.PHONY : src/renderer/pipeline.cpp.o
+
+src/renderer/pipeline.i: src/renderer/pipeline.cpp.i
+.PHONY : src/renderer/pipeline.i
+
+# target to preprocess a source file
+src/renderer/pipeline.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/pipeline.cpp.i
+.PHONY : src/renderer/pipeline.cpp.i
+
+src/renderer/pipeline.s: src/renderer/pipeline.cpp.s
+.PHONY : src/renderer/pipeline.s
+
+# target to generate assembly for a file
+src/renderer/pipeline.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/pipeline.cpp.s
+.PHONY : src/renderer/pipeline.cpp.s
+
+src/renderer/renderer.o: src/renderer/renderer.cpp.o
+.PHONY : src/renderer/renderer.o
+
+# target to build an object file
+src/renderer/renderer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/renderer.cpp.o
+.PHONY : src/renderer/renderer.cpp.o
+
+src/renderer/renderer.i: src/renderer/renderer.cpp.i
+.PHONY : src/renderer/renderer.i
+
+# target to preprocess a source file
+src/renderer/renderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/renderer.cpp.i
+.PHONY : src/renderer/renderer.cpp.i
+
+src/renderer/renderer.s: src/renderer/renderer.cpp.s
+.PHONY : src/renderer/renderer.s
+
+# target to generate assembly for a file
+src/renderer/renderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/renderer.cpp.s
+.PHONY : src/renderer/renderer.cpp.s
+
+src/renderer/swap_chain.o: src/renderer/swap_chain.cpp.o
+.PHONY : src/renderer/swap_chain.o
+
+# target to build an object file
+src/renderer/swap_chain.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/swap_chain.cpp.o
+.PHONY : src/renderer/swap_chain.cpp.o
+
+src/renderer/swap_chain.i: src/renderer/swap_chain.cpp.i
+.PHONY : src/renderer/swap_chain.i
+
+# target to preprocess a source file
+src/renderer/swap_chain.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/swap_chain.cpp.i
+.PHONY : src/renderer/swap_chain.cpp.i
+
+src/renderer/swap_chain.s: src/renderer/swap_chain.cpp.s
+.PHONY : src/renderer/swap_chain.s
+
+# target to generate assembly for a file
+src/renderer/swap_chain.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/swap_chain.cpp.s
+.PHONY : src/renderer/swap_chain.cpp.s
+
 src/renderer/systems/point_light_system.o: src/renderer/systems/point_light_system.cpp.o
 .PHONY : src/renderer/systems/point_light_system.o
 
@@ -262,245 +478,29 @@ src/renderer/systems/simple_render_system.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/systems/simple_render_system.cpp.s
 .PHONY : src/renderer/systems/simple_render_system.cpp.s
 
-src/renderer/tml_buffer.o: src/renderer/tml_buffer.cpp.o
-.PHONY : src/renderer/tml_buffer.o
+src/renderer/window.o: src/renderer/window.cpp.o
+.PHONY : src/renderer/window.o
 
 # target to build an object file
-src/renderer/tml_buffer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/tml_buffer.cpp.o
-.PHONY : src/renderer/tml_buffer.cpp.o
+src/renderer/window.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/window.cpp.o
+.PHONY : src/renderer/window.cpp.o
 
-src/renderer/tml_buffer.i: src/renderer/tml_buffer.cpp.i
-.PHONY : src/renderer/tml_buffer.i
-
-# target to preprocess a source file
-src/renderer/tml_buffer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/tml_buffer.cpp.i
-.PHONY : src/renderer/tml_buffer.cpp.i
-
-src/renderer/tml_buffer.s: src/renderer/tml_buffer.cpp.s
-.PHONY : src/renderer/tml_buffer.s
-
-# target to generate assembly for a file
-src/renderer/tml_buffer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/tml_buffer.cpp.s
-.PHONY : src/renderer/tml_buffer.cpp.s
-
-src/renderer/tml_camera.o: src/renderer/tml_camera.cpp.o
-.PHONY : src/renderer/tml_camera.o
-
-# target to build an object file
-src/renderer/tml_camera.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/tml_camera.cpp.o
-.PHONY : src/renderer/tml_camera.cpp.o
-
-src/renderer/tml_camera.i: src/renderer/tml_camera.cpp.i
-.PHONY : src/renderer/tml_camera.i
+src/renderer/window.i: src/renderer/window.cpp.i
+.PHONY : src/renderer/window.i
 
 # target to preprocess a source file
-src/renderer/tml_camera.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/tml_camera.cpp.i
-.PHONY : src/renderer/tml_camera.cpp.i
+src/renderer/window.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/window.cpp.i
+.PHONY : src/renderer/window.cpp.i
 
-src/renderer/tml_camera.s: src/renderer/tml_camera.cpp.s
-.PHONY : src/renderer/tml_camera.s
-
-# target to generate assembly for a file
-src/renderer/tml_camera.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/tml_camera.cpp.s
-.PHONY : src/renderer/tml_camera.cpp.s
-
-src/renderer/tml_descriptors.o: src/renderer/tml_descriptors.cpp.o
-.PHONY : src/renderer/tml_descriptors.o
-
-# target to build an object file
-src/renderer/tml_descriptors.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/tml_descriptors.cpp.o
-.PHONY : src/renderer/tml_descriptors.cpp.o
-
-src/renderer/tml_descriptors.i: src/renderer/tml_descriptors.cpp.i
-.PHONY : src/renderer/tml_descriptors.i
-
-# target to preprocess a source file
-src/renderer/tml_descriptors.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/tml_descriptors.cpp.i
-.PHONY : src/renderer/tml_descriptors.cpp.i
-
-src/renderer/tml_descriptors.s: src/renderer/tml_descriptors.cpp.s
-.PHONY : src/renderer/tml_descriptors.s
+src/renderer/window.s: src/renderer/window.cpp.s
+.PHONY : src/renderer/window.s
 
 # target to generate assembly for a file
-src/renderer/tml_descriptors.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/tml_descriptors.cpp.s
-.PHONY : src/renderer/tml_descriptors.cpp.s
-
-src/renderer/tml_device.o: src/renderer/tml_device.cpp.o
-.PHONY : src/renderer/tml_device.o
-
-# target to build an object file
-src/renderer/tml_device.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/tml_device.cpp.o
-.PHONY : src/renderer/tml_device.cpp.o
-
-src/renderer/tml_device.i: src/renderer/tml_device.cpp.i
-.PHONY : src/renderer/tml_device.i
-
-# target to preprocess a source file
-src/renderer/tml_device.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/tml_device.cpp.i
-.PHONY : src/renderer/tml_device.cpp.i
-
-src/renderer/tml_device.s: src/renderer/tml_device.cpp.s
-.PHONY : src/renderer/tml_device.s
-
-# target to generate assembly for a file
-src/renderer/tml_device.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/tml_device.cpp.s
-.PHONY : src/renderer/tml_device.cpp.s
-
-src/renderer/tml_game_object.o: src/renderer/tml_game_object.cpp.o
-.PHONY : src/renderer/tml_game_object.o
-
-# target to build an object file
-src/renderer/tml_game_object.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/tml_game_object.cpp.o
-.PHONY : src/renderer/tml_game_object.cpp.o
-
-src/renderer/tml_game_object.i: src/renderer/tml_game_object.cpp.i
-.PHONY : src/renderer/tml_game_object.i
-
-# target to preprocess a source file
-src/renderer/tml_game_object.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/tml_game_object.cpp.i
-.PHONY : src/renderer/tml_game_object.cpp.i
-
-src/renderer/tml_game_object.s: src/renderer/tml_game_object.cpp.s
-.PHONY : src/renderer/tml_game_object.s
-
-# target to generate assembly for a file
-src/renderer/tml_game_object.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/tml_game_object.cpp.s
-.PHONY : src/renderer/tml_game_object.cpp.s
-
-src/renderer/tml_model.o: src/renderer/tml_model.cpp.o
-.PHONY : src/renderer/tml_model.o
-
-# target to build an object file
-src/renderer/tml_model.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/tml_model.cpp.o
-.PHONY : src/renderer/tml_model.cpp.o
-
-src/renderer/tml_model.i: src/renderer/tml_model.cpp.i
-.PHONY : src/renderer/tml_model.i
-
-# target to preprocess a source file
-src/renderer/tml_model.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/tml_model.cpp.i
-.PHONY : src/renderer/tml_model.cpp.i
-
-src/renderer/tml_model.s: src/renderer/tml_model.cpp.s
-.PHONY : src/renderer/tml_model.s
-
-# target to generate assembly for a file
-src/renderer/tml_model.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/tml_model.cpp.s
-.PHONY : src/renderer/tml_model.cpp.s
-
-src/renderer/tml_pipeline.o: src/renderer/tml_pipeline.cpp.o
-.PHONY : src/renderer/tml_pipeline.o
-
-# target to build an object file
-src/renderer/tml_pipeline.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/tml_pipeline.cpp.o
-.PHONY : src/renderer/tml_pipeline.cpp.o
-
-src/renderer/tml_pipeline.i: src/renderer/tml_pipeline.cpp.i
-.PHONY : src/renderer/tml_pipeline.i
-
-# target to preprocess a source file
-src/renderer/tml_pipeline.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/tml_pipeline.cpp.i
-.PHONY : src/renderer/tml_pipeline.cpp.i
-
-src/renderer/tml_pipeline.s: src/renderer/tml_pipeline.cpp.s
-.PHONY : src/renderer/tml_pipeline.s
-
-# target to generate assembly for a file
-src/renderer/tml_pipeline.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/tml_pipeline.cpp.s
-.PHONY : src/renderer/tml_pipeline.cpp.s
-
-src/renderer/tml_renderer.o: src/renderer/tml_renderer.cpp.o
-.PHONY : src/renderer/tml_renderer.o
-
-# target to build an object file
-src/renderer/tml_renderer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/tml_renderer.cpp.o
-.PHONY : src/renderer/tml_renderer.cpp.o
-
-src/renderer/tml_renderer.i: src/renderer/tml_renderer.cpp.i
-.PHONY : src/renderer/tml_renderer.i
-
-# target to preprocess a source file
-src/renderer/tml_renderer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/tml_renderer.cpp.i
-.PHONY : src/renderer/tml_renderer.cpp.i
-
-src/renderer/tml_renderer.s: src/renderer/tml_renderer.cpp.s
-.PHONY : src/renderer/tml_renderer.s
-
-# target to generate assembly for a file
-src/renderer/tml_renderer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/tml_renderer.cpp.s
-.PHONY : src/renderer/tml_renderer.cpp.s
-
-src/renderer/tml_swap_chain.o: src/renderer/tml_swap_chain.cpp.o
-.PHONY : src/renderer/tml_swap_chain.o
-
-# target to build an object file
-src/renderer/tml_swap_chain.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/tml_swap_chain.cpp.o
-.PHONY : src/renderer/tml_swap_chain.cpp.o
-
-src/renderer/tml_swap_chain.i: src/renderer/tml_swap_chain.cpp.i
-.PHONY : src/renderer/tml_swap_chain.i
-
-# target to preprocess a source file
-src/renderer/tml_swap_chain.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/tml_swap_chain.cpp.i
-.PHONY : src/renderer/tml_swap_chain.cpp.i
-
-src/renderer/tml_swap_chain.s: src/renderer/tml_swap_chain.cpp.s
-.PHONY : src/renderer/tml_swap_chain.s
-
-# target to generate assembly for a file
-src/renderer/tml_swap_chain.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/tml_swap_chain.cpp.s
-.PHONY : src/renderer/tml_swap_chain.cpp.s
-
-src/renderer/tml_window.o: src/renderer/tml_window.cpp.o
-.PHONY : src/renderer/tml_window.o
-
-# target to build an object file
-src/renderer/tml_window.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/tml_window.cpp.o
-.PHONY : src/renderer/tml_window.cpp.o
-
-src/renderer/tml_window.i: src/renderer/tml_window.cpp.i
-.PHONY : src/renderer/tml_window.i
-
-# target to preprocess a source file
-src/renderer/tml_window.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/tml_window.cpp.i
-.PHONY : src/renderer/tml_window.cpp.i
-
-src/renderer/tml_window.s: src/renderer/tml_window.cpp.s
-.PHONY : src/renderer/tml_window.s
-
-# target to generate assembly for a file
-src/renderer/tml_window.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/tml_window.cpp.s
-.PHONY : src/renderer/tml_window.cpp.s
+src/renderer/window.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TmlEngine.dir/build.make CMakeFiles/TmlEngine.dir/src/renderer/window.cpp.s
+.PHONY : src/renderer/window.cpp.s
 
 # Help Target
 help:
@@ -521,42 +521,42 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/renderer/buffer.o"
+	@echo "... src/renderer/buffer.i"
+	@echo "... src/renderer/buffer.s"
+	@echo "... src/renderer/camera.o"
+	@echo "... src/renderer/camera.i"
+	@echo "... src/renderer/camera.s"
+	@echo "... src/renderer/descriptors.o"
+	@echo "... src/renderer/descriptors.i"
+	@echo "... src/renderer/descriptors.s"
+	@echo "... src/renderer/device.o"
+	@echo "... src/renderer/device.i"
+	@echo "... src/renderer/device.s"
+	@echo "... src/renderer/game_object.o"
+	@echo "... src/renderer/game_object.i"
+	@echo "... src/renderer/game_object.s"
+	@echo "... src/renderer/model.o"
+	@echo "... src/renderer/model.i"
+	@echo "... src/renderer/model.s"
+	@echo "... src/renderer/pipeline.o"
+	@echo "... src/renderer/pipeline.i"
+	@echo "... src/renderer/pipeline.s"
+	@echo "... src/renderer/renderer.o"
+	@echo "... src/renderer/renderer.i"
+	@echo "... src/renderer/renderer.s"
+	@echo "... src/renderer/swap_chain.o"
+	@echo "... src/renderer/swap_chain.i"
+	@echo "... src/renderer/swap_chain.s"
 	@echo "... src/renderer/systems/point_light_system.o"
 	@echo "... src/renderer/systems/point_light_system.i"
 	@echo "... src/renderer/systems/point_light_system.s"
 	@echo "... src/renderer/systems/simple_render_system.o"
 	@echo "... src/renderer/systems/simple_render_system.i"
 	@echo "... src/renderer/systems/simple_render_system.s"
-	@echo "... src/renderer/tml_buffer.o"
-	@echo "... src/renderer/tml_buffer.i"
-	@echo "... src/renderer/tml_buffer.s"
-	@echo "... src/renderer/tml_camera.o"
-	@echo "... src/renderer/tml_camera.i"
-	@echo "... src/renderer/tml_camera.s"
-	@echo "... src/renderer/tml_descriptors.o"
-	@echo "... src/renderer/tml_descriptors.i"
-	@echo "... src/renderer/tml_descriptors.s"
-	@echo "... src/renderer/tml_device.o"
-	@echo "... src/renderer/tml_device.i"
-	@echo "... src/renderer/tml_device.s"
-	@echo "... src/renderer/tml_game_object.o"
-	@echo "... src/renderer/tml_game_object.i"
-	@echo "... src/renderer/tml_game_object.s"
-	@echo "... src/renderer/tml_model.o"
-	@echo "... src/renderer/tml_model.i"
-	@echo "... src/renderer/tml_model.s"
-	@echo "... src/renderer/tml_pipeline.o"
-	@echo "... src/renderer/tml_pipeline.i"
-	@echo "... src/renderer/tml_pipeline.s"
-	@echo "... src/renderer/tml_renderer.o"
-	@echo "... src/renderer/tml_renderer.i"
-	@echo "... src/renderer/tml_renderer.s"
-	@echo "... src/renderer/tml_swap_chain.o"
-	@echo "... src/renderer/tml_swap_chain.i"
-	@echo "... src/renderer/tml_swap_chain.s"
-	@echo "... src/renderer/tml_window.o"
-	@echo "... src/renderer/tml_window.i"
-	@echo "... src/renderer/tml_window.s"
+	@echo "... src/renderer/window.o"
+	@echo "... src/renderer/window.i"
+	@echo "... src/renderer/window.s"
 .PHONY : help
 
 

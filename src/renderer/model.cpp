@@ -1,6 +1,6 @@
-#include "tml_model.hpp"
+#include "model.hpp"
 
-#include "tml_utils.hpp"
+#include "utils.hpp"
 
 // libs
 #define TINYOBJLOADER_IMPLEMENTATION

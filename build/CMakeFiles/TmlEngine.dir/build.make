@@ -111,10 +111,136 @@ CMakeFiles/TmlEngine.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TmlEngine.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/main.cpp" -o CMakeFiles/TmlEngine.dir/src/main.cpp.s
 
+CMakeFiles/TmlEngine.dir/src/renderer/buffer.cpp.o: CMakeFiles/TmlEngine.dir/flags.make
+CMakeFiles/TmlEngine.dir/src/renderer/buffer.cpp.o: ../src/renderer/buffer.cpp
+CMakeFiles/TmlEngine.dir/src/renderer/buffer.cpp.o: CMakeFiles/TmlEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/TmlEngine.dir/src/renderer/buffer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TmlEngine.dir/src/renderer/buffer.cpp.o -MF CMakeFiles/TmlEngine.dir/src/renderer/buffer.cpp.o.d -o CMakeFiles/TmlEngine.dir/src/renderer/buffer.cpp.o -c "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/buffer.cpp"
+
+CMakeFiles/TmlEngine.dir/src/renderer/buffer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TmlEngine.dir/src/renderer/buffer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/buffer.cpp" > CMakeFiles/TmlEngine.dir/src/renderer/buffer.cpp.i
+
+CMakeFiles/TmlEngine.dir/src/renderer/buffer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TmlEngine.dir/src/renderer/buffer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/buffer.cpp" -o CMakeFiles/TmlEngine.dir/src/renderer/buffer.cpp.s
+
+CMakeFiles/TmlEngine.dir/src/renderer/camera.cpp.o: CMakeFiles/TmlEngine.dir/flags.make
+CMakeFiles/TmlEngine.dir/src/renderer/camera.cpp.o: ../src/renderer/camera.cpp
+CMakeFiles/TmlEngine.dir/src/renderer/camera.cpp.o: CMakeFiles/TmlEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/TmlEngine.dir/src/renderer/camera.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TmlEngine.dir/src/renderer/camera.cpp.o -MF CMakeFiles/TmlEngine.dir/src/renderer/camera.cpp.o.d -o CMakeFiles/TmlEngine.dir/src/renderer/camera.cpp.o -c "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/camera.cpp"
+
+CMakeFiles/TmlEngine.dir/src/renderer/camera.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TmlEngine.dir/src/renderer/camera.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/camera.cpp" > CMakeFiles/TmlEngine.dir/src/renderer/camera.cpp.i
+
+CMakeFiles/TmlEngine.dir/src/renderer/camera.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TmlEngine.dir/src/renderer/camera.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/camera.cpp" -o CMakeFiles/TmlEngine.dir/src/renderer/camera.cpp.s
+
+CMakeFiles/TmlEngine.dir/src/renderer/descriptors.cpp.o: CMakeFiles/TmlEngine.dir/flags.make
+CMakeFiles/TmlEngine.dir/src/renderer/descriptors.cpp.o: ../src/renderer/descriptors.cpp
+CMakeFiles/TmlEngine.dir/src/renderer/descriptors.cpp.o: CMakeFiles/TmlEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/TmlEngine.dir/src/renderer/descriptors.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TmlEngine.dir/src/renderer/descriptors.cpp.o -MF CMakeFiles/TmlEngine.dir/src/renderer/descriptors.cpp.o.d -o CMakeFiles/TmlEngine.dir/src/renderer/descriptors.cpp.o -c "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/descriptors.cpp"
+
+CMakeFiles/TmlEngine.dir/src/renderer/descriptors.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TmlEngine.dir/src/renderer/descriptors.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/descriptors.cpp" > CMakeFiles/TmlEngine.dir/src/renderer/descriptors.cpp.i
+
+CMakeFiles/TmlEngine.dir/src/renderer/descriptors.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TmlEngine.dir/src/renderer/descriptors.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/descriptors.cpp" -o CMakeFiles/TmlEngine.dir/src/renderer/descriptors.cpp.s
+
+CMakeFiles/TmlEngine.dir/src/renderer/device.cpp.o: CMakeFiles/TmlEngine.dir/flags.make
+CMakeFiles/TmlEngine.dir/src/renderer/device.cpp.o: ../src/renderer/device.cpp
+CMakeFiles/TmlEngine.dir/src/renderer/device.cpp.o: CMakeFiles/TmlEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/TmlEngine.dir/src/renderer/device.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TmlEngine.dir/src/renderer/device.cpp.o -MF CMakeFiles/TmlEngine.dir/src/renderer/device.cpp.o.d -o CMakeFiles/TmlEngine.dir/src/renderer/device.cpp.o -c "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/device.cpp"
+
+CMakeFiles/TmlEngine.dir/src/renderer/device.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TmlEngine.dir/src/renderer/device.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/device.cpp" > CMakeFiles/TmlEngine.dir/src/renderer/device.cpp.i
+
+CMakeFiles/TmlEngine.dir/src/renderer/device.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TmlEngine.dir/src/renderer/device.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/device.cpp" -o CMakeFiles/TmlEngine.dir/src/renderer/device.cpp.s
+
+CMakeFiles/TmlEngine.dir/src/renderer/game_object.cpp.o: CMakeFiles/TmlEngine.dir/flags.make
+CMakeFiles/TmlEngine.dir/src/renderer/game_object.cpp.o: ../src/renderer/game_object.cpp
+CMakeFiles/TmlEngine.dir/src/renderer/game_object.cpp.o: CMakeFiles/TmlEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/TmlEngine.dir/src/renderer/game_object.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TmlEngine.dir/src/renderer/game_object.cpp.o -MF CMakeFiles/TmlEngine.dir/src/renderer/game_object.cpp.o.d -o CMakeFiles/TmlEngine.dir/src/renderer/game_object.cpp.o -c "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/game_object.cpp"
+
+CMakeFiles/TmlEngine.dir/src/renderer/game_object.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TmlEngine.dir/src/renderer/game_object.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/game_object.cpp" > CMakeFiles/TmlEngine.dir/src/renderer/game_object.cpp.i
+
+CMakeFiles/TmlEngine.dir/src/renderer/game_object.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TmlEngine.dir/src/renderer/game_object.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/game_object.cpp" -o CMakeFiles/TmlEngine.dir/src/renderer/game_object.cpp.s
+
+CMakeFiles/TmlEngine.dir/src/renderer/model.cpp.o: CMakeFiles/TmlEngine.dir/flags.make
+CMakeFiles/TmlEngine.dir/src/renderer/model.cpp.o: ../src/renderer/model.cpp
+CMakeFiles/TmlEngine.dir/src/renderer/model.cpp.o: CMakeFiles/TmlEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/TmlEngine.dir/src/renderer/model.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TmlEngine.dir/src/renderer/model.cpp.o -MF CMakeFiles/TmlEngine.dir/src/renderer/model.cpp.o.d -o CMakeFiles/TmlEngine.dir/src/renderer/model.cpp.o -c "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/model.cpp"
+
+CMakeFiles/TmlEngine.dir/src/renderer/model.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TmlEngine.dir/src/renderer/model.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/model.cpp" > CMakeFiles/TmlEngine.dir/src/renderer/model.cpp.i
+
+CMakeFiles/TmlEngine.dir/src/renderer/model.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TmlEngine.dir/src/renderer/model.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/model.cpp" -o CMakeFiles/TmlEngine.dir/src/renderer/model.cpp.s
+
+CMakeFiles/TmlEngine.dir/src/renderer/pipeline.cpp.o: CMakeFiles/TmlEngine.dir/flags.make
+CMakeFiles/TmlEngine.dir/src/renderer/pipeline.cpp.o: ../src/renderer/pipeline.cpp
+CMakeFiles/TmlEngine.dir/src/renderer/pipeline.cpp.o: CMakeFiles/TmlEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/TmlEngine.dir/src/renderer/pipeline.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TmlEngine.dir/src/renderer/pipeline.cpp.o -MF CMakeFiles/TmlEngine.dir/src/renderer/pipeline.cpp.o.d -o CMakeFiles/TmlEngine.dir/src/renderer/pipeline.cpp.o -c "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/pipeline.cpp"
+
+CMakeFiles/TmlEngine.dir/src/renderer/pipeline.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TmlEngine.dir/src/renderer/pipeline.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/pipeline.cpp" > CMakeFiles/TmlEngine.dir/src/renderer/pipeline.cpp.i
+
+CMakeFiles/TmlEngine.dir/src/renderer/pipeline.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TmlEngine.dir/src/renderer/pipeline.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/pipeline.cpp" -o CMakeFiles/TmlEngine.dir/src/renderer/pipeline.cpp.s
+
+CMakeFiles/TmlEngine.dir/src/renderer/renderer.cpp.o: CMakeFiles/TmlEngine.dir/flags.make
+CMakeFiles/TmlEngine.dir/src/renderer/renderer.cpp.o: ../src/renderer/renderer.cpp
+CMakeFiles/TmlEngine.dir/src/renderer/renderer.cpp.o: CMakeFiles/TmlEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/TmlEngine.dir/src/renderer/renderer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TmlEngine.dir/src/renderer/renderer.cpp.o -MF CMakeFiles/TmlEngine.dir/src/renderer/renderer.cpp.o.d -o CMakeFiles/TmlEngine.dir/src/renderer/renderer.cpp.o -c "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/renderer.cpp"
+
+CMakeFiles/TmlEngine.dir/src/renderer/renderer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TmlEngine.dir/src/renderer/renderer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/renderer.cpp" > CMakeFiles/TmlEngine.dir/src/renderer/renderer.cpp.i
+
+CMakeFiles/TmlEngine.dir/src/renderer/renderer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TmlEngine.dir/src/renderer/renderer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/renderer.cpp" -o CMakeFiles/TmlEngine.dir/src/renderer/renderer.cpp.s
+
+CMakeFiles/TmlEngine.dir/src/renderer/swap_chain.cpp.o: CMakeFiles/TmlEngine.dir/flags.make
+CMakeFiles/TmlEngine.dir/src/renderer/swap_chain.cpp.o: ../src/renderer/swap_chain.cpp
+CMakeFiles/TmlEngine.dir/src/renderer/swap_chain.cpp.o: CMakeFiles/TmlEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/TmlEngine.dir/src/renderer/swap_chain.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TmlEngine.dir/src/renderer/swap_chain.cpp.o -MF CMakeFiles/TmlEngine.dir/src/renderer/swap_chain.cpp.o.d -o CMakeFiles/TmlEngine.dir/src/renderer/swap_chain.cpp.o -c "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/swap_chain.cpp"
+
+CMakeFiles/TmlEngine.dir/src/renderer/swap_chain.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TmlEngine.dir/src/renderer/swap_chain.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/swap_chain.cpp" > CMakeFiles/TmlEngine.dir/src/renderer/swap_chain.cpp.i
+
+CMakeFiles/TmlEngine.dir/src/renderer/swap_chain.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TmlEngine.dir/src/renderer/swap_chain.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/swap_chain.cpp" -o CMakeFiles/TmlEngine.dir/src/renderer/swap_chain.cpp.s
+
 CMakeFiles/TmlEngine.dir/src/renderer/systems/point_light_system.cpp.o: CMakeFiles/TmlEngine.dir/flags.make
 CMakeFiles/TmlEngine.dir/src/renderer/systems/point_light_system.cpp.o: ../src/renderer/systems/point_light_system.cpp
 CMakeFiles/TmlEngine.dir/src/renderer/systems/point_light_system.cpp.o: CMakeFiles/TmlEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/TmlEngine.dir/src/renderer/systems/point_light_system.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/TmlEngine.dir/src/renderer/systems/point_light_system.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TmlEngine.dir/src/renderer/systems/point_light_system.cpp.o -MF CMakeFiles/TmlEngine.dir/src/renderer/systems/point_light_system.cpp.o.d -o CMakeFiles/TmlEngine.dir/src/renderer/systems/point_light_system.cpp.o -c "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/systems/point_light_system.cpp"
 
 CMakeFiles/TmlEngine.dir/src/renderer/systems/point_light_system.cpp.i: cmake_force
@@ -128,7 +254,7 @@ CMakeFiles/TmlEngine.dir/src/renderer/systems/point_light_system.cpp.s: cmake_fo
 CMakeFiles/TmlEngine.dir/src/renderer/systems/simple_render_system.cpp.o: CMakeFiles/TmlEngine.dir/flags.make
 CMakeFiles/TmlEngine.dir/src/renderer/systems/simple_render_system.cpp.o: ../src/renderer/systems/simple_render_system.cpp
 CMakeFiles/TmlEngine.dir/src/renderer/systems/simple_render_system.cpp.o: CMakeFiles/TmlEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/TmlEngine.dir/src/renderer/systems/simple_render_system.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/TmlEngine.dir/src/renderer/systems/simple_render_system.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TmlEngine.dir/src/renderer/systems/simple_render_system.cpp.o -MF CMakeFiles/TmlEngine.dir/src/renderer/systems/simple_render_system.cpp.o.d -o CMakeFiles/TmlEngine.dir/src/renderer/systems/simple_render_system.cpp.o -c "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/systems/simple_render_system.cpp"
 
 CMakeFiles/TmlEngine.dir/src/renderer/systems/simple_render_system.cpp.i: cmake_force
@@ -139,163 +265,37 @@ CMakeFiles/TmlEngine.dir/src/renderer/systems/simple_render_system.cpp.s: cmake_
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TmlEngine.dir/src/renderer/systems/simple_render_system.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/systems/simple_render_system.cpp" -o CMakeFiles/TmlEngine.dir/src/renderer/systems/simple_render_system.cpp.s
 
-CMakeFiles/TmlEngine.dir/src/renderer/tml_buffer.cpp.o: CMakeFiles/TmlEngine.dir/flags.make
-CMakeFiles/TmlEngine.dir/src/renderer/tml_buffer.cpp.o: ../src/renderer/tml_buffer.cpp
-CMakeFiles/TmlEngine.dir/src/renderer/tml_buffer.cpp.o: CMakeFiles/TmlEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/TmlEngine.dir/src/renderer/tml_buffer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TmlEngine.dir/src/renderer/tml_buffer.cpp.o -MF CMakeFiles/TmlEngine.dir/src/renderer/tml_buffer.cpp.o.d -o CMakeFiles/TmlEngine.dir/src/renderer/tml_buffer.cpp.o -c "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/tml_buffer.cpp"
+CMakeFiles/TmlEngine.dir/src/renderer/window.cpp.o: CMakeFiles/TmlEngine.dir/flags.make
+CMakeFiles/TmlEngine.dir/src/renderer/window.cpp.o: ../src/renderer/window.cpp
+CMakeFiles/TmlEngine.dir/src/renderer/window.cpp.o: CMakeFiles/TmlEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/TmlEngine.dir/src/renderer/window.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TmlEngine.dir/src/renderer/window.cpp.o -MF CMakeFiles/TmlEngine.dir/src/renderer/window.cpp.o.d -o CMakeFiles/TmlEngine.dir/src/renderer/window.cpp.o -c "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/window.cpp"
 
-CMakeFiles/TmlEngine.dir/src/renderer/tml_buffer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TmlEngine.dir/src/renderer/tml_buffer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/tml_buffer.cpp" > CMakeFiles/TmlEngine.dir/src/renderer/tml_buffer.cpp.i
+CMakeFiles/TmlEngine.dir/src/renderer/window.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TmlEngine.dir/src/renderer/window.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/window.cpp" > CMakeFiles/TmlEngine.dir/src/renderer/window.cpp.i
 
-CMakeFiles/TmlEngine.dir/src/renderer/tml_buffer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TmlEngine.dir/src/renderer/tml_buffer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/tml_buffer.cpp" -o CMakeFiles/TmlEngine.dir/src/renderer/tml_buffer.cpp.s
-
-CMakeFiles/TmlEngine.dir/src/renderer/tml_camera.cpp.o: CMakeFiles/TmlEngine.dir/flags.make
-CMakeFiles/TmlEngine.dir/src/renderer/tml_camera.cpp.o: ../src/renderer/tml_camera.cpp
-CMakeFiles/TmlEngine.dir/src/renderer/tml_camera.cpp.o: CMakeFiles/TmlEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/TmlEngine.dir/src/renderer/tml_camera.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TmlEngine.dir/src/renderer/tml_camera.cpp.o -MF CMakeFiles/TmlEngine.dir/src/renderer/tml_camera.cpp.o.d -o CMakeFiles/TmlEngine.dir/src/renderer/tml_camera.cpp.o -c "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/tml_camera.cpp"
-
-CMakeFiles/TmlEngine.dir/src/renderer/tml_camera.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TmlEngine.dir/src/renderer/tml_camera.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/tml_camera.cpp" > CMakeFiles/TmlEngine.dir/src/renderer/tml_camera.cpp.i
-
-CMakeFiles/TmlEngine.dir/src/renderer/tml_camera.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TmlEngine.dir/src/renderer/tml_camera.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/tml_camera.cpp" -o CMakeFiles/TmlEngine.dir/src/renderer/tml_camera.cpp.s
-
-CMakeFiles/TmlEngine.dir/src/renderer/tml_descriptors.cpp.o: CMakeFiles/TmlEngine.dir/flags.make
-CMakeFiles/TmlEngine.dir/src/renderer/tml_descriptors.cpp.o: ../src/renderer/tml_descriptors.cpp
-CMakeFiles/TmlEngine.dir/src/renderer/tml_descriptors.cpp.o: CMakeFiles/TmlEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/TmlEngine.dir/src/renderer/tml_descriptors.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TmlEngine.dir/src/renderer/tml_descriptors.cpp.o -MF CMakeFiles/TmlEngine.dir/src/renderer/tml_descriptors.cpp.o.d -o CMakeFiles/TmlEngine.dir/src/renderer/tml_descriptors.cpp.o -c "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/tml_descriptors.cpp"
-
-CMakeFiles/TmlEngine.dir/src/renderer/tml_descriptors.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TmlEngine.dir/src/renderer/tml_descriptors.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/tml_descriptors.cpp" > CMakeFiles/TmlEngine.dir/src/renderer/tml_descriptors.cpp.i
-
-CMakeFiles/TmlEngine.dir/src/renderer/tml_descriptors.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TmlEngine.dir/src/renderer/tml_descriptors.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/tml_descriptors.cpp" -o CMakeFiles/TmlEngine.dir/src/renderer/tml_descriptors.cpp.s
-
-CMakeFiles/TmlEngine.dir/src/renderer/tml_device.cpp.o: CMakeFiles/TmlEngine.dir/flags.make
-CMakeFiles/TmlEngine.dir/src/renderer/tml_device.cpp.o: ../src/renderer/tml_device.cpp
-CMakeFiles/TmlEngine.dir/src/renderer/tml_device.cpp.o: CMakeFiles/TmlEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/TmlEngine.dir/src/renderer/tml_device.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TmlEngine.dir/src/renderer/tml_device.cpp.o -MF CMakeFiles/TmlEngine.dir/src/renderer/tml_device.cpp.o.d -o CMakeFiles/TmlEngine.dir/src/renderer/tml_device.cpp.o -c "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/tml_device.cpp"
-
-CMakeFiles/TmlEngine.dir/src/renderer/tml_device.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TmlEngine.dir/src/renderer/tml_device.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/tml_device.cpp" > CMakeFiles/TmlEngine.dir/src/renderer/tml_device.cpp.i
-
-CMakeFiles/TmlEngine.dir/src/renderer/tml_device.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TmlEngine.dir/src/renderer/tml_device.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/tml_device.cpp" -o CMakeFiles/TmlEngine.dir/src/renderer/tml_device.cpp.s
-
-CMakeFiles/TmlEngine.dir/src/renderer/tml_game_object.cpp.o: CMakeFiles/TmlEngine.dir/flags.make
-CMakeFiles/TmlEngine.dir/src/renderer/tml_game_object.cpp.o: ../src/renderer/tml_game_object.cpp
-CMakeFiles/TmlEngine.dir/src/renderer/tml_game_object.cpp.o: CMakeFiles/TmlEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/TmlEngine.dir/src/renderer/tml_game_object.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TmlEngine.dir/src/renderer/tml_game_object.cpp.o -MF CMakeFiles/TmlEngine.dir/src/renderer/tml_game_object.cpp.o.d -o CMakeFiles/TmlEngine.dir/src/renderer/tml_game_object.cpp.o -c "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/tml_game_object.cpp"
-
-CMakeFiles/TmlEngine.dir/src/renderer/tml_game_object.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TmlEngine.dir/src/renderer/tml_game_object.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/tml_game_object.cpp" > CMakeFiles/TmlEngine.dir/src/renderer/tml_game_object.cpp.i
-
-CMakeFiles/TmlEngine.dir/src/renderer/tml_game_object.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TmlEngine.dir/src/renderer/tml_game_object.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/tml_game_object.cpp" -o CMakeFiles/TmlEngine.dir/src/renderer/tml_game_object.cpp.s
-
-CMakeFiles/TmlEngine.dir/src/renderer/tml_model.cpp.o: CMakeFiles/TmlEngine.dir/flags.make
-CMakeFiles/TmlEngine.dir/src/renderer/tml_model.cpp.o: ../src/renderer/tml_model.cpp
-CMakeFiles/TmlEngine.dir/src/renderer/tml_model.cpp.o: CMakeFiles/TmlEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/TmlEngine.dir/src/renderer/tml_model.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TmlEngine.dir/src/renderer/tml_model.cpp.o -MF CMakeFiles/TmlEngine.dir/src/renderer/tml_model.cpp.o.d -o CMakeFiles/TmlEngine.dir/src/renderer/tml_model.cpp.o -c "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/tml_model.cpp"
-
-CMakeFiles/TmlEngine.dir/src/renderer/tml_model.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TmlEngine.dir/src/renderer/tml_model.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/tml_model.cpp" > CMakeFiles/TmlEngine.dir/src/renderer/tml_model.cpp.i
-
-CMakeFiles/TmlEngine.dir/src/renderer/tml_model.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TmlEngine.dir/src/renderer/tml_model.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/tml_model.cpp" -o CMakeFiles/TmlEngine.dir/src/renderer/tml_model.cpp.s
-
-CMakeFiles/TmlEngine.dir/src/renderer/tml_pipeline.cpp.o: CMakeFiles/TmlEngine.dir/flags.make
-CMakeFiles/TmlEngine.dir/src/renderer/tml_pipeline.cpp.o: ../src/renderer/tml_pipeline.cpp
-CMakeFiles/TmlEngine.dir/src/renderer/tml_pipeline.cpp.o: CMakeFiles/TmlEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/TmlEngine.dir/src/renderer/tml_pipeline.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TmlEngine.dir/src/renderer/tml_pipeline.cpp.o -MF CMakeFiles/TmlEngine.dir/src/renderer/tml_pipeline.cpp.o.d -o CMakeFiles/TmlEngine.dir/src/renderer/tml_pipeline.cpp.o -c "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/tml_pipeline.cpp"
-
-CMakeFiles/TmlEngine.dir/src/renderer/tml_pipeline.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TmlEngine.dir/src/renderer/tml_pipeline.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/tml_pipeline.cpp" > CMakeFiles/TmlEngine.dir/src/renderer/tml_pipeline.cpp.i
-
-CMakeFiles/TmlEngine.dir/src/renderer/tml_pipeline.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TmlEngine.dir/src/renderer/tml_pipeline.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/tml_pipeline.cpp" -o CMakeFiles/TmlEngine.dir/src/renderer/tml_pipeline.cpp.s
-
-CMakeFiles/TmlEngine.dir/src/renderer/tml_renderer.cpp.o: CMakeFiles/TmlEngine.dir/flags.make
-CMakeFiles/TmlEngine.dir/src/renderer/tml_renderer.cpp.o: ../src/renderer/tml_renderer.cpp
-CMakeFiles/TmlEngine.dir/src/renderer/tml_renderer.cpp.o: CMakeFiles/TmlEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/TmlEngine.dir/src/renderer/tml_renderer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TmlEngine.dir/src/renderer/tml_renderer.cpp.o -MF CMakeFiles/TmlEngine.dir/src/renderer/tml_renderer.cpp.o.d -o CMakeFiles/TmlEngine.dir/src/renderer/tml_renderer.cpp.o -c "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/tml_renderer.cpp"
-
-CMakeFiles/TmlEngine.dir/src/renderer/tml_renderer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TmlEngine.dir/src/renderer/tml_renderer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/tml_renderer.cpp" > CMakeFiles/TmlEngine.dir/src/renderer/tml_renderer.cpp.i
-
-CMakeFiles/TmlEngine.dir/src/renderer/tml_renderer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TmlEngine.dir/src/renderer/tml_renderer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/tml_renderer.cpp" -o CMakeFiles/TmlEngine.dir/src/renderer/tml_renderer.cpp.s
-
-CMakeFiles/TmlEngine.dir/src/renderer/tml_swap_chain.cpp.o: CMakeFiles/TmlEngine.dir/flags.make
-CMakeFiles/TmlEngine.dir/src/renderer/tml_swap_chain.cpp.o: ../src/renderer/tml_swap_chain.cpp
-CMakeFiles/TmlEngine.dir/src/renderer/tml_swap_chain.cpp.o: CMakeFiles/TmlEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/TmlEngine.dir/src/renderer/tml_swap_chain.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TmlEngine.dir/src/renderer/tml_swap_chain.cpp.o -MF CMakeFiles/TmlEngine.dir/src/renderer/tml_swap_chain.cpp.o.d -o CMakeFiles/TmlEngine.dir/src/renderer/tml_swap_chain.cpp.o -c "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/tml_swap_chain.cpp"
-
-CMakeFiles/TmlEngine.dir/src/renderer/tml_swap_chain.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TmlEngine.dir/src/renderer/tml_swap_chain.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/tml_swap_chain.cpp" > CMakeFiles/TmlEngine.dir/src/renderer/tml_swap_chain.cpp.i
-
-CMakeFiles/TmlEngine.dir/src/renderer/tml_swap_chain.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TmlEngine.dir/src/renderer/tml_swap_chain.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/tml_swap_chain.cpp" -o CMakeFiles/TmlEngine.dir/src/renderer/tml_swap_chain.cpp.s
-
-CMakeFiles/TmlEngine.dir/src/renderer/tml_window.cpp.o: CMakeFiles/TmlEngine.dir/flags.make
-CMakeFiles/TmlEngine.dir/src/renderer/tml_window.cpp.o: ../src/renderer/tml_window.cpp
-CMakeFiles/TmlEngine.dir/src/renderer/tml_window.cpp.o: CMakeFiles/TmlEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/TmlEngine.dir/src/renderer/tml_window.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TmlEngine.dir/src/renderer/tml_window.cpp.o -MF CMakeFiles/TmlEngine.dir/src/renderer/tml_window.cpp.o.d -o CMakeFiles/TmlEngine.dir/src/renderer/tml_window.cpp.o -c "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/tml_window.cpp"
-
-CMakeFiles/TmlEngine.dir/src/renderer/tml_window.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TmlEngine.dir/src/renderer/tml_window.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/tml_window.cpp" > CMakeFiles/TmlEngine.dir/src/renderer/tml_window.cpp.i
-
-CMakeFiles/TmlEngine.dir/src/renderer/tml_window.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TmlEngine.dir/src/renderer/tml_window.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/tml_window.cpp" -o CMakeFiles/TmlEngine.dir/src/renderer/tml_window.cpp.s
+CMakeFiles/TmlEngine.dir/src/renderer/window.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TmlEngine.dir/src/renderer/window.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/src/renderer/window.cpp" -o CMakeFiles/TmlEngine.dir/src/renderer/window.cpp.s
 
 # Object files for target TmlEngine
 TmlEngine_OBJECTS = \
 "CMakeFiles/TmlEngine.dir/src/first_app.cpp.o" \
 "CMakeFiles/TmlEngine.dir/src/keyboard_movement_controller.cpp.o" \
 "CMakeFiles/TmlEngine.dir/src/main.cpp.o" \
+"CMakeFiles/TmlEngine.dir/src/renderer/buffer.cpp.o" \
+"CMakeFiles/TmlEngine.dir/src/renderer/camera.cpp.o" \
+"CMakeFiles/TmlEngine.dir/src/renderer/descriptors.cpp.o" \
+"CMakeFiles/TmlEngine.dir/src/renderer/device.cpp.o" \
+"CMakeFiles/TmlEngine.dir/src/renderer/game_object.cpp.o" \
+"CMakeFiles/TmlEngine.dir/src/renderer/model.cpp.o" \
+"CMakeFiles/TmlEngine.dir/src/renderer/pipeline.cpp.o" \
+"CMakeFiles/TmlEngine.dir/src/renderer/renderer.cpp.o" \
+"CMakeFiles/TmlEngine.dir/src/renderer/swap_chain.cpp.o" \
 "CMakeFiles/TmlEngine.dir/src/renderer/systems/point_light_system.cpp.o" \
 "CMakeFiles/TmlEngine.dir/src/renderer/systems/simple_render_system.cpp.o" \
-"CMakeFiles/TmlEngine.dir/src/renderer/tml_buffer.cpp.o" \
-"CMakeFiles/TmlEngine.dir/src/renderer/tml_camera.cpp.o" \
-"CMakeFiles/TmlEngine.dir/src/renderer/tml_descriptors.cpp.o" \
-"CMakeFiles/TmlEngine.dir/src/renderer/tml_device.cpp.o" \
-"CMakeFiles/TmlEngine.dir/src/renderer/tml_game_object.cpp.o" \
-"CMakeFiles/TmlEngine.dir/src/renderer/tml_model.cpp.o" \
-"CMakeFiles/TmlEngine.dir/src/renderer/tml_pipeline.cpp.o" \
-"CMakeFiles/TmlEngine.dir/src/renderer/tml_renderer.cpp.o" \
-"CMakeFiles/TmlEngine.dir/src/renderer/tml_swap_chain.cpp.o" \
-"CMakeFiles/TmlEngine.dir/src/renderer/tml_window.cpp.o"
+"CMakeFiles/TmlEngine.dir/src/renderer/window.cpp.o"
 
 # External object files for target TmlEngine
 TmlEngine_EXTERNAL_OBJECTS =
@@ -303,18 +303,18 @@ TmlEngine_EXTERNAL_OBJECTS =
 TmlEngine: CMakeFiles/TmlEngine.dir/src/first_app.cpp.o
 TmlEngine: CMakeFiles/TmlEngine.dir/src/keyboard_movement_controller.cpp.o
 TmlEngine: CMakeFiles/TmlEngine.dir/src/main.cpp.o
+TmlEngine: CMakeFiles/TmlEngine.dir/src/renderer/buffer.cpp.o
+TmlEngine: CMakeFiles/TmlEngine.dir/src/renderer/camera.cpp.o
+TmlEngine: CMakeFiles/TmlEngine.dir/src/renderer/descriptors.cpp.o
+TmlEngine: CMakeFiles/TmlEngine.dir/src/renderer/device.cpp.o
+TmlEngine: CMakeFiles/TmlEngine.dir/src/renderer/game_object.cpp.o
+TmlEngine: CMakeFiles/TmlEngine.dir/src/renderer/model.cpp.o
+TmlEngine: CMakeFiles/TmlEngine.dir/src/renderer/pipeline.cpp.o
+TmlEngine: CMakeFiles/TmlEngine.dir/src/renderer/renderer.cpp.o
+TmlEngine: CMakeFiles/TmlEngine.dir/src/renderer/swap_chain.cpp.o
 TmlEngine: CMakeFiles/TmlEngine.dir/src/renderer/systems/point_light_system.cpp.o
 TmlEngine: CMakeFiles/TmlEngine.dir/src/renderer/systems/simple_render_system.cpp.o
-TmlEngine: CMakeFiles/TmlEngine.dir/src/renderer/tml_buffer.cpp.o
-TmlEngine: CMakeFiles/TmlEngine.dir/src/renderer/tml_camera.cpp.o
-TmlEngine: CMakeFiles/TmlEngine.dir/src/renderer/tml_descriptors.cpp.o
-TmlEngine: CMakeFiles/TmlEngine.dir/src/renderer/tml_device.cpp.o
-TmlEngine: CMakeFiles/TmlEngine.dir/src/renderer/tml_game_object.cpp.o
-TmlEngine: CMakeFiles/TmlEngine.dir/src/renderer/tml_model.cpp.o
-TmlEngine: CMakeFiles/TmlEngine.dir/src/renderer/tml_pipeline.cpp.o
-TmlEngine: CMakeFiles/TmlEngine.dir/src/renderer/tml_renderer.cpp.o
-TmlEngine: CMakeFiles/TmlEngine.dir/src/renderer/tml_swap_chain.cpp.o
-TmlEngine: CMakeFiles/TmlEngine.dir/src/renderer/tml_window.cpp.o
+TmlEngine: CMakeFiles/TmlEngine.dir/src/renderer/window.cpp.o
 TmlEngine: CMakeFiles/TmlEngine.dir/build.make
 TmlEngine: /usr/lib/libglfw.so.3.3
 TmlEngine: /lib/libvulkan.so

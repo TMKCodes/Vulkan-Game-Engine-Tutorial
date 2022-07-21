@@ -1,8 +1,8 @@
 #pragma once
 
-#include "tml_device.hpp"
-#include "tml_swap_chain.hpp"
-#include "tml_window.hpp"
+#include "device.hpp"
+#include "swap_chain.hpp"
+#include "window.hpp"
 
 // std
 #include <cassert>
