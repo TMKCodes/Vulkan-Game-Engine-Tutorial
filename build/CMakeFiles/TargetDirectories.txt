@@ -1,0 +1,4 @@
+/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/build/CMakeFiles/LveEngine.dir
+/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/build/CMakeFiles/Shaders.dir
+/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/build/CMakeFiles/edit_cache.dir
+/run/media/tonto/20D6F3BBD6F38EF2/Vulkan/Tomulo Engine/build/CMakeFiles/rebuild_cache.dir
