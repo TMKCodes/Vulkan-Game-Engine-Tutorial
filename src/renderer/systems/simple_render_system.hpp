@@ -1,10 +1,10 @@
 #pragma once
 
-#include "../tml_camera.hpp"
-#include "../tml_device.hpp"
-#include "../tml_frame_info.hpp"
-#include "../tml_game_object.hpp"
-#include "../tml_pipeline.hpp"
+#include "../camera.hpp"
+#include "../device.hpp"
+#include "../frame_info.hpp"
+#include "../game_object.hpp"
+#include "../pipeline.hpp"
 
 // std
 #include <memory>
