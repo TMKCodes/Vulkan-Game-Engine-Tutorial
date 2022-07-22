@@ -2,9 +2,39 @@
 
 #include <limits>
 #include <iostream>
+#include <glm/gtx/rotate_vector.hpp>
+#include <glm/gtx/vector_angle.hpp>
 
 namespace tml {
     void KeyboardMovementController::moveInPlaneXZ(GLFWwindow* window, float dt, TmlDrawable& gameObject) {
+        if(!glfwGetWindowAttrib(window, GLFW_HOVERED)) {
+            firstClick = false;
+            return;
+        }
+        int width;
+        int height;
+        glfwGetWindowSize(window, &width, &height);
+
+        if(firstClick) {
+            glfwSetCursorPos(window, width / 2, height / 2);
+            firstClick = false;
+        }
+        double mouseY;
+        double mouseX;
+        glfwGetCursorPos(window, &mouseX, &mouseY);
+
+        float rotateX = lookSpeed * (float)(mouseY - (height / 2)) / height;
+        float rotateY = -(lookSpeed * (float)(mouseX - (width / 2)) / width);
+
+		glm::vec3 orientation{ .0f, .0f, 6.28318530718f};
+        orientation = glm::rotate(orientation, glm::radians(rotateX), glm::vec3{0.f, -1.f, 0.f});
+        orientation.x = glm::clamp(orientation.x, -1.57079632679f, 1.57079632679f);
+        orientation = glm::rotate(orientation, glm::radians(rotateY), glm::normalize(glm::cross(orientation, glm::vec3{0.f, -1.f, 0.f})));
+
+        orientation.z = 6.28318530718f;
+        gameObject.transform.rotation += orientation;
+        glfwSetCursorPos(window, (width / 2), (height / 2));
+
         float yaw = gameObject.transform.rotation.y;
         const glm::vec3 forwardDir{sin(yaw), 0.f, cos(yaw)};
         const glm::vec3 rightDir{forwardDir.z, 0.f, -forwardDir.x};
@@ -22,25 +52,5 @@ namespace tml {
             gameObject.transform.translation += moveSpeed * dt * glm::normalize(moveDir);
         }
 
-        if(!glfwGetWindowAttrib(window, GLFW_HOVERED)) {
-            return;
-        }
-        int width, height;
-        glfwGetWindowSize(window, &width, &height);
-        width = width/2;
-        height = height/2;
-        double xpos, ypos;
-        glfwGetCursorPos(window, &xpos, &ypos);
-        glfwSetCursorPos(window, width, height);
-        glm::vec3 rotate{0};
-        rotate.y -= float(width - xpos);
-        rotate.x += float(height - ypos);
-        if(glm::dot(rotate, rotate) > std::numeric_limits<float>::epsilon()) {
-            gameObject.transform.rotation += lookSpeed * dt *  glm::normalize(rotate);
-        }
-        
-        // limit pitch values between about +/- 85ish degrees
-        //gameObject.transform.rotation.x = glm::clamp(gameObject.transform.rotation.x, -1.5f, 1.5f);
-        //gameObject.transform.rotation.y = glm::mod(gameObject.transform.rotation.y, glm::two_pi<float>());
     }
 } 

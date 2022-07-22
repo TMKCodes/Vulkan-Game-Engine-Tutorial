@@ -80,7 +80,7 @@ namespace tml {
             camera.setViewYXZ(viewerObject.transform.translation, viewerObject.transform.rotation);
 
             float aspect = tmlRenderer.getAspectRatio();
-            camera.setPerspectiveProjection(glm::radians(50.f), aspect, 0.1f, 100.f);
+            camera.setPerspectiveProjection(glm::radians(90.f), aspect, 0.1f, 150.f);
 
             if (auto commandBuffer = tmlRenderer.beginFrame()) {
                 int frameIndex = tmlRenderer.getFrameIndex();
