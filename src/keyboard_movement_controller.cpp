@@ -17,7 +17,6 @@ namespace tml {
 
         if(firstClick) {
             std::cout << "Came out of hibernation. Please play me!" << std::endl;
-            glfwSetCursorPos(window, width / 2, height / 2);
             firstClick = false;
         }
         double mouseY;
