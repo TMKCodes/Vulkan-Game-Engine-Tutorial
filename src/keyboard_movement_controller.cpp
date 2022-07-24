@@ -8,7 +8,7 @@
 namespace tml {
     void KeyboardMovementController::moveInPlaneXZ(GLFWwindow* window, float dt, TmlDrawable& gameObject) {
         if(!glfwGetWindowAttrib(window, GLFW_HOVERED)) {
-            firstClick = false;
+            firstClick = true;
             return;
         }
         int width;
@@ -16,6 +16,7 @@ namespace tml {
         glfwGetWindowSize(window, &width, &height);
 
         if(firstClick) {
+            std::cout << "Came out of hibernation. Please play me!" << std::endl;
             glfwSetCursorPos(window, width / 2, height / 2);
             firstClick = false;
         }
@@ -23,17 +24,19 @@ namespace tml {
         double mouseX;
         glfwGetCursorPos(window, &mouseX, &mouseY);
 
-        float rotateX = lookSpeed * (float)(mouseY - (height / 2)) / height;
-        float rotateY = -(lookSpeed * (float)(mouseX - (width / 2)) / width);
+        float rotateX = lookSpeed * (float)(mouseY - lastCursorPosition.y) / height;
+        float rotateY = -(lookSpeed * (float)(mouseX - lastCursorPosition.x) / width);
 
 		glm::vec3 orientation{ .0f, .0f, 6.28318530718f};
         orientation = glm::rotate(orientation, glm::radians(rotateX), glm::vec3{0.f, -1.f, 0.f});
         orientation.x = glm::clamp(orientation.x, -1.57079632679f, 1.57079632679f);
         orientation = glm::rotate(orientation, glm::radians(rotateY), glm::normalize(glm::cross(orientation, glm::vec3{0.f, -1.f, 0.f})));
+        orientation.z = glm::two_pi<float>();
 
-        orientation.z = 6.28318530718f;
-        gameObject.transform.rotation += orientation;
-        glfwSetCursorPos(window, (width / 2), (height / 2));
+        if(glm::dot(orientation, orientation) > std::numeric_limits<float>::epsilon()) {
+            gameObject.transform.rotation += orientation;
+            std::cout << gameObject.transform.rotation.x << ", " << gameObject.transform.rotation.y << ", " << gameObject.transform.rotation.z << std::endl;
+        }
 
         float yaw = gameObject.transform.rotation.y;
         const glm::vec3 forwardDir{sin(yaw), 0.f, cos(yaw)};
@@ -51,6 +54,13 @@ namespace tml {
         if(glm::dot(moveDir, moveDir) > std::numeric_limits<float>::epsilon()) {
             gameObject.transform.translation += moveSpeed * dt * glm::normalize(moveDir);
         }
+        // limit pitch values between about +/- 85ish degrees
+        gameObject.transform.rotation.x = glm::clamp(gameObject.transform.rotation.x, -1.5f, 1.5f);
+        gameObject.transform.rotation.y = glm::mod(gameObject.transform.rotation.y, glm::two_pi<float>());
+        gameObject.transform.rotation.z = 0;
+        lastCursorPosition.x = mouseX;
+        lastCursorPosition.y = mouseY;
+        //glfwSetCursorPos(window, width / 2, height / 2);
 
     }
 } 
